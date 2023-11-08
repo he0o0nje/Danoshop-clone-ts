@@ -1,9 +1,9 @@
-import * as style from "./CartStyle.js";
-import { NaverButton } from "../../components/Sub/TopStyle.js";
+import * as style from "./CartStyle";
+import { NaverButton } from "../../components/Sub/TopStyle";
 import TopBanner from "../../components/TopBanner/TopBanner";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addCount,
@@ -13,7 +13,7 @@ import {
   totalDiscount,
   totalPrice,
   finalPrice,
-} from "../../store";
+} from "../../store.js";
 import { Link } from "react-router-dom";
 
 function Cart() {

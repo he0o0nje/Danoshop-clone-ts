@@ -1,3 +1,4 @@
+import React from "react";
 import * as style from "./FooterStyle";
 import { Link } from "react-router-dom";
 
@@ -34,7 +35,7 @@ function Main() {
             <div className="inq_wrap">
               <style.InqTitle>고객센터 정보</style.InqTitle>
               <div className="cs_list">
-                <strong nbr>상담/주문전화</strong>
+                <strong>상담/주문전화</strong>
                 <span>02-2135-1885</span>
               </div>
               <div className="cs_list">

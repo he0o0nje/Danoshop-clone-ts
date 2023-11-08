@@ -17,7 +17,7 @@ import pm11 from "../../data/product/11pm.json";
 import TryEat from "../../data/product/TryEat.json";
 import { useScroll } from "../../components/Sub/ScrollContext";
 import { useParams } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function AboutPage() {
   const { id } = useParams();

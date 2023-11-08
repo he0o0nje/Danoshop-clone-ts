@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const HeaderWrap = styled.div`
+export const HeaderWrap = styled.div<{
+  isFixed: boolean;
+  isAboutHeader: boolean;
+}>`
   width: 100%;
   margin: 0 auto;
   background-color: #fff;

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 interface HeaderProps {
   isAboutHeader: boolean;
-  isHeaderFixed: boolean;
 }
 
 function Header({ isAboutHeader }: HeaderProps): JSX.Element {
@@ -34,10 +33,7 @@ function Header({ isAboutHeader }: HeaderProps): JSX.Element {
   ];
   return (
     <>
-      <style.HeaderWrap
-        isHeaderFixed={isHeaderFixed}
-        isAboutHeader={isAboutHeader}
-      >
+      <style.HeaderWrap isFixed={isHeaderFixed} isAboutHeader={isAboutHeader}>
         <style.Header>
           <style.HeaderTop>
             <ul className="top_list">

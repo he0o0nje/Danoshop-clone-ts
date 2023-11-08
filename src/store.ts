@@ -1,18 +1,33 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
+
+interface ProductItem {
+  id: string;
+  image: string;
+  name: string;
+  price: string;
+  sale_price: string;
+  option: string;
+  quantity: number;
+  finalPrice?: string;
+}
+
+interface CartState {
+  items: ProductItem[];
+}
 
 // Cart 상태 관리
 const selectedOptions = createSlice({
   name: "selectedOptions",
-  initialState: [],
+  initialState: [] as string[],
   reducers: {
-    addSelectedOption(state, action) {
+    addSelectedOption(state, action: PayloadAction<string>) {
       state.push(action.payload);
     },
-    removeSelectedOption(state, action) {
+    removeSelectedOption(state, action: PayloadAction<string>) {
       return state.filter((option) => option !== action.payload);
     },
     clearSelectedOptions(state) {
-      return [];
+      return [] as string[];
     },
   },
 });
@@ -52,9 +67,9 @@ let cart = createSlice({
         quantity: 5,
       },
     ],
-  },
+  } as CartState,
   reducers: {
-    addCount(state, action) {
+    addCount(state, action: PayloadAction<string>) {
       let product = state.items.find((item) => item.id === action.payload);
       if (product) {
         product.quantity++;
@@ -63,7 +78,7 @@ let cart = createSlice({
         ).toLocaleString();
       }
     },
-    decreaseCount(state, action) {
+    decreaseCount(state, action: PayloadAction<string>) {
       let product = state.items.find((item) => item.id === action.payload);
       if (product && product.quantity > 0) {
         product.quantity--;
@@ -74,7 +89,7 @@ let cart = createSlice({
         alert("상품이 더 이상 없습니다.");
       }
     },
-    addItem(state, action) {
+    addItem(state, action: PayloadAction<ProductItem>) {
       let product = state.items.find((item) => item.id === action.payload.id);
       if (product) {
         product.quantity++;
@@ -94,7 +109,7 @@ let cart = createSlice({
         });
       }
     },
-    deleteItem(state, action) {
+    deleteItem(state, action: PayloadAction<string>) {
       state.items = state.items.filter((item) => item.id !== action.payload);
     },
     // updateQuantity(state, action) {
@@ -110,8 +125,14 @@ let cart = createSlice({
   },
 });
 
-export const { addCount, decreaseCount, addItem, deleteItem, updateQuantity } =
-  cart.actions;
+export const { addCount, decreaseCount, addItem, deleteItem } = cart.actions;
+
+interface PriceCalculation {
+  calculateItemPrice: number;
+  totalDiscount: number;
+  totalPrice: number;
+  finalPrice: number;
+}
 
 const calculatePrice = createSlice({
   name: "calculatePrice",
@@ -120,9 +141,9 @@ const calculatePrice = createSlice({
     totalDiscount: 0,
     totalPrice: 0,
     finalPrice: 0,
-  },
+  } as PriceCalculation,
   reducers: {
-    calculateItemPrice(state, action) {
+    calculateItemPrice(state, action: PayloadAction<{ items: ProductItem[] }>) {
       const { items } = action.payload;
       const calculatedItemPrice = items.map((item) => {
         const quantity = item.quantity;
@@ -131,9 +152,13 @@ const calculatePrice = createSlice({
           : parseInt(item.price.replace(/,/, ""));
         return quantity * price;
       });
-      state.calculateItemPrice = calculatedItemPrice;
+      // state.calculateItemPrice = calculatedItemPrice;
+      state.calculateItemPrice = calculatedItemPrice.reduce(
+        (total, itemPrice) => total + itemPrice,
+        0
+      );
     },
-    totalDiscount(state, action) {
+    totalDiscount(state, action: PayloadAction<{ items: ProductItem[] }>) {
       const { items } = action.payload;
       const totalDiscount = items
         .filter((item) => item.sale_price)
@@ -150,7 +175,7 @@ const calculatePrice = createSlice({
         }, 0);
       state.totalDiscount = totalDiscount;
     },
-    totalPrice(state, action) {
+    totalPrice(state, action: PayloadAction<{ items: ProductItem[] }>) {
       const { items } = action.payload;
       const totalPrice = items
         .map((item) => {
@@ -165,7 +190,7 @@ const calculatePrice = createSlice({
         }, 0);
       state.totalPrice = totalPrice;
     },
-    finalPrice(state, action) {
+    finalPrice(state, action: PayloadAction<{ items: ProductItem[] }>) {
       const { items } = action.payload;
       const totalPrice = items
         .map((item) => {
@@ -204,7 +229,7 @@ export const { calculateItemPrice, totalDiscount, totalPrice, finalPrice } =
 
 const detail = createSlice({
   name: "detail",
-  initialState: {},
+  initialState: {} as ProductItem,
   reducers: {
     setDetail(state, action) {
       return { ...state, ...action.payload };

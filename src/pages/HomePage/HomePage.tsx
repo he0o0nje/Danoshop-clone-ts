@@ -1,3 +1,4 @@
+import React from "react";
 import * as style from "./MainStyle";
 import TopBanner from "../../components/TopBanner/TopBanner";
 import Header from "../../components/Header/Header";
@@ -20,7 +21,7 @@ function HomePage() {
   return (
     <>
       <TopBanner />
-      <Header />
+      <Header isAboutHeader={false} />
       <style.Main>
         <Banner />
         <Am7 />

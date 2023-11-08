@@ -1,3 +1,4 @@
+import React from "react";
 import * as style from "./LoginStyle";
 import TopBanner from "../../components/TopBanner/TopBanner";
 import Header from "../../components/Header/Header";
@@ -41,7 +42,7 @@ function Login() {
         <div className="login_btn">
           <button>로그인</button>
         </div>
-        <div class="wrap_find">
+        <div className="wrap_find">
           <div>
             <a href="/">아이디 찾기</a>
           </div>
@@ -49,7 +50,7 @@ function Login() {
             <a href="/">비밀번호 찾기</a>
           </div>
         </div>
-        <div class="login__util">
+        <div className="login__util">
           <div>아직 회원이 아니신가요?</div>
           <div>
             지금 회원가입을 하시면<br></br>다양하고 특별한 혜택이 준비되어
@@ -59,12 +60,12 @@ function Login() {
             <button>회원가입</button>
           </div>
         </div>
-        <div class="login_sns">
-          <div class="sns">SNS 로그인</div>
-          <div class="wrap_sns_log">
-            <button class="btnKakao">카카오 로그인</button>
-            <button class="btnNaver">네이버 로그인</button>
-            <button class="btnApple">Apple로 로그인</button>
+        <div className="login_sns">
+          <div className="sns">SNS 로그인</div>
+          <div className="wrap_sns_log">
+            <button className="btnKakao">카카오 로그인</button>
+            <button className="btnNaver">네이버 로그인</button>
+            <button className="btnApple">Apple로 로그인</button>
           </div>
         </div>
       </style.Login>
