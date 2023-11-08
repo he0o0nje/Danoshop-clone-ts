@@ -8,11 +8,12 @@ import pm6 from "../../data/product/6pm.json";
 import pm9 from "../../data/product/9pm.json";
 import pm11 from "../../data/product/11pm.json";
 import TryEat from "../../data/product/TryEat.json";
-import { useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 
 function ProdDetail() {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string | undefined }>();
+  const productId: number | undefined = parseInt(id || "");
   const dummy = [
     ...am7,
     ...am10,
@@ -23,7 +24,10 @@ function ProdDetail() {
     ...pm11,
     ...TryEat,
   ];
-  const product = dummy.find((item) => item.id === parseInt(id));
+  const product = dummy.find((item) => item.id === productId);
+  const info_name = product?.detail[0]?.info_name;
+  const keep = product?.detail[0]?.keep;
+  const volume = product?.detail[0]?.volume;
 
   // const [selectedTab, setSelectedTab] = useState(1);
   // const tabContentRef = useRef(null);
@@ -47,14 +51,12 @@ function ProdDetail() {
         // onTabClick={handleTabClick}
         // ref={tabContentRef}
       />
-      <style.ProdDetail
-        {...(product.detail[0].info_name ? { show: true } : {})}
-      >
+      <style.ProdDetail show={!!info_name}>
         <div>
           <p>
-            {product.detail[0].image_set.map((item, index) => (
-              <div>
-                <img key={index} src={item.image} alt="" />
+            {product?.detail[0]?.image_set.map((item, index) => (
+              <div key={index}>
+                <img src={item.image} alt="" />
               </div>
             ))}
           </p>
@@ -73,7 +75,7 @@ function ProdDetail() {
                       <strong>제품명</strong>
                     </th>
                     <td>
-                      <span>{product.detail[0].info_name}</span>
+                      <span>{info_name}</span>
                     </td>
                   </tr>
                   <tr>
@@ -82,7 +84,7 @@ function ProdDetail() {
                     </th>
                     <td>
                       <div>
-                        <span>{product.detail[0].keep}</span>
+                        <span>{keep}</span>
                       </div>
                     </td>
                   </tr>
@@ -92,7 +94,7 @@ function ProdDetail() {
                     </th>
                     <td>
                       <div>
-                        <span>{product.detail[0].volume}</span>
+                        <span>{volume}</span>
                       </div>
                     </td>
                   </tr>

@@ -1,11 +1,16 @@
+import React from "react";
 import * as style from "./DetailTabStyle";
 import { useScroll } from "./ScrollContext";
 import { Link } from "react-router-dom";
 
-function DetailTab({ openTab }) {
+interface DetailTabProps {
+  openTab: number;
+}
+
+function DetailTab({ openTab }: DetailTabProps): JSX.Element {
   const { selectedTab, setSelectedTab } = useScroll();
 
-  const onTabClick = (tabIndex) => {
+  const onTabClick = (tabIndex: number) => {
     setSelectedTab(tabIndex);
   };
 

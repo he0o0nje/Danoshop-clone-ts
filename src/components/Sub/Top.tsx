@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, ChangeEvent } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem, addSelectedOption, removeSelectedOption } from "../../store";
@@ -13,7 +13,8 @@ import pm11 from "../../data/product/11pm.json";
 import TryEat from "../../data/product/TryEat.json";
 
 function Top() {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string | undefined }>();
+  const productId: number | undefined = parseInt(id || "");
   const dummy = [
     ...am7,
     ...am10,
@@ -24,7 +25,7 @@ function Top() {
     ...pm11,
     ...TryEat,
   ];
-  const product = dummy.find((item) => item.id === parseInt(id));
+  const product = dummy.find((item) => item.id === productId);
 
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [optionQuantities, setOptionQuantities] = useState([]);

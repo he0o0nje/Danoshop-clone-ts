@@ -8,11 +8,12 @@ import pm6 from "../../data/product/6pm.json";
 import pm9 from "../../data/product/9pm.json";
 import pm11 from "../../data/product/11pm.json";
 import TryEat from "../../data/product/TryEat.json";
-import { useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 
 function ProdReview() {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string | undefined }>();
+  const productId: number | undefined = parseInt(id || "");
   const dummy = [
     ...am7,
     ...am10,
@@ -23,7 +24,7 @@ function ProdReview() {
     ...pm11,
     ...TryEat,
   ];
-  const product = dummy.find((item) => item.id === parseInt(id));
+  const product = dummy.find((item) => item.id === productId);
 
   // const [selectedTab, setSelectedTab] = useState(1);
   // const tabContentRef = useRef(null);
@@ -125,7 +126,7 @@ function ProdReview() {
               </ul>
             </div>
           </style.ReviewSummary>
-          {dummy.media_review && (
+          {product && product.media_review && (
             <style.MediaSummary>
               <div className="header">
                 <div className="title_wrap">
@@ -198,7 +199,7 @@ function ProdReview() {
                   </a>
                 </div>
               </li>
-              {dummy.media_review && (
+              {product && product.media_review && (
                 <li className="media_first">
                   <a href="#none">
                     <div className="toggle_btn">
@@ -277,80 +278,81 @@ function ProdReview() {
           </style.SortFilter>
           <style.ReviewList>
             <ul className="review_list">
-              {product.review.map((item, index) => (
-                <li key={index}>
-                  <div className="left_content">
-                    <div className="tag_section">
-                      {item.tag_new && (
-                        <span className="tag_new">{item.tag_new}</span>
-                      )}
-                      {item.tag_repurchase && (
-                        <span className="tag_repurchase">
-                          {item.tag_repurchase}
-                        </span>
-                      )}
-                    </div>
-                    <div className="score_section">
-                      <div className="score_container">
-                        <div className="score_star">
-                          <div>
-                            <img src="/img/icon/ico_star.svg" alt="" />
+              {product &&
+                product.review.map((item, index) => (
+                  <li key={index}>
+                    <div className="left_content">
+                      <div className="tag_section">
+                        {item.tag_new && (
+                          <span className="tag_new">{item.tag_new}</span>
+                        )}
+                        {item.tag_repurchase && (
+                          <span className="tag_repurchase">
+                            {item.tag_repurchase}
+                          </span>
+                        )}
+                      </div>
+                      <div className="score_section">
+                        <div className="score_container">
+                          <div className="score_star">
+                            <div>
+                              <img src="/img/icon/ico_star.svg" alt="" />
+                            </div>
+                            <div>
+                              <img src="/img/icon/ico_star.svg" alt="" />
+                            </div>
+                            <div>
+                              <img src="/img/icon/ico_star.svg" alt="" />
+                            </div>
+                            <div>
+                              <img src="/img/icon/ico_star.svg" alt="" />
+                            </div>
+                            <div>
+                              <img src="/img/icon/ico_star.svg" alt="" />
+                            </div>
                           </div>
-                          <div>
-                            <img src="/img/icon/ico_star.svg" alt="" />
-                          </div>
-                          <div>
-                            <img src="/img/icon/ico_star.svg" alt="" />
-                          </div>
-                          <div>
-                            <img src="/img/icon/ico_star.svg" alt="" />
-                          </div>
-                          <div>
-                            <img src="/img/icon/ico_star.svg" alt="" />
-                          </div>
+                          <div className="score_text">아주 좋아요</div>
                         </div>
-                        <div className="score_text">아주 좋아요</div>
+                        <div className="edit_container">
+                          <div className="date">{item.date}</div>
+                        </div>
                       </div>
-                      <div className="edit_container">
-                        <div className="date">{item.date}</div>
+                      <div className="content_section">
+                        <div className="message">{item.message}</div>
+                      </div>
+                      <div className="like_section">
+                        <div className="comment_info">
+                          <a href="#none">
+                            <span className="text">댓글</span>
+                            <span className="count">0</span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 8 8"
+                              className=""
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M.667 2.333L4 5.667l3.333-3.334"
+                              ></path>
+                            </svg>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                    <div className="content_section">
-                      <div className="message">{item.message}</div>
-                    </div>
-                    <div className="like_section">
-                      <div className="comment_info">
-                        <a href="#none">
-                          <span className="text">댓글</span>
-                          <span className="count">0</span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 8 8"
-                            className=""
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              d="M.667 2.333L4 5.667l3.333-3.334"
-                            ></path>
-                          </svg>
-                        </a>
+                    <div className="right_content">
+                      <div className="user_name_msg">
+                        <b>{item.user_name}****</b>
+                        님의 리뷰입니다.
+                      </div>
+                      <div className="options_section">
+                        <span className="name">옵션</span>
+                        <span className="value">{item.option}</span>
                       </div>
                     </div>
-                  </div>
-                  <div className="right_content">
-                    <div className="user_name_msg">
-                      <b>{item.user_name}****</b>
-                      님의 리뷰입니다.
-                    </div>
-                    <div className="options_section">
-                      <span className="name">옵션</span>
-                      <span className="value">{item.option}</span>
-                    </div>
-                  </div>
-                </li>
-              ))}
+                  </li>
+                ))}
             </ul>
           </style.ReviewList>
           <style.ReviewPagination>

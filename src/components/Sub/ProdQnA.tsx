@@ -1,6 +1,6 @@
 import * as style from "./ProdQnAStyle";
 import DetailTab from "./DetailTab";
-import { useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 function ProdQnA() {
   // const [selectedTab, setSelectedTab] = useState(1);
