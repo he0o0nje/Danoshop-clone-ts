@@ -13,7 +13,7 @@ import {
   totalDiscount,
   totalPrice,
   finalPrice,
-} from "../../store.js";
+} from "../../store";
 import { Link } from "react-router-dom";
 
 function Cart() {
@@ -267,7 +267,7 @@ function Cart() {
                       </div>
                     ))}
                     <div className="summary">
-                      <div class="title">
+                      <div className="title">
                         <h5>[기본배송]</h5>
                       </div>
                       <div className="contents">
@@ -281,7 +281,7 @@ function Cart() {
                           - 상품할인금액 {totalDiscountValue}
                         </span>
                       </div>
-                      <span class="total">
+                      <span className="total">
                         합계 : <strong>{finalPriceValue}</strong>원
                       </span>
                     </div>
@@ -295,9 +295,9 @@ function Cart() {
               <div className="cart_total">
                 <div className="total_summary">
                   <div className="summary_item">
-                    <div class="heading">
-                      <h4 class="title">총 상품금액</h4>
-                      <div class="data">
+                    <div className="heading">
+                      <h4 className="title">총 상품금액</h4>
+                      <div className="data">
                         <strong>
                           <span>{totalPriceValue}</span>
                         </strong>
@@ -306,9 +306,9 @@ function Cart() {
                     </div>
                   </div>
                   <div className="shipping">
-                    <div class="heading">
-                      <h4 class="title">총 배송비</h4>
-                      <div class="data">
+                    <div className="heading">
+                      <h4 className="title">총 배송비</h4>
+                      <div className="data">
                         <strong>
                           <span>
                             {totalPriceValue >= 70000 ? "0" : "3,500"}
@@ -320,9 +320,9 @@ function Cart() {
                   </div>
                   {totalDiscountValue > 0 && (
                     <div className="benefit_price">
-                      <div class="heading">
-                        <h4 class="title">총 할인금액</h4>
-                        <div class="data">
+                      <div className="heading">
+                        <h4 className="title">총 할인금액</h4>
+                        <div className="data">
                           <strong>
                             <span>{totalDiscountValue.toLocaleString()}</span>
                           </strong>
@@ -330,15 +330,15 @@ function Cart() {
                         </div>
                       </div>
                       <div className="list">
-                        <div class="item">
-                          <h5 class="title">기간할인</h5>
-                          <div class="data">3000원</div>
+                        <div className="item">
+                          <h5 className="title">기간할인</h5>
+                          <div className="data">3000원</div>
                         </div>
                       </div>
                     </div>
                   )}
                   <div className="total">
-                    <h3 class="title">결제예정금액</h3>
+                    <h3 className="title">결제예정금액</h3>
                     <div className="payment_price">
                       <strong>{finalPriceValue}</strong>원
                     </div>
@@ -396,7 +396,7 @@ function Cart() {
         </style.CartContainer>
         <style.Help>
           <h3>이용안내</h3>
-          <div class="inner">
+          <div className="inner">
             <h4>장바구니 이용안내</h4>
             <ul>
               <li>

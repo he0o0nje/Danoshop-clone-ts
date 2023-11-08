@@ -8,10 +8,10 @@ interface DetailTabProps {
 }
 
 function DetailTab({ openTab }: DetailTabProps): JSX.Element {
-  const { selectedTab, setSelectedTab } = useScroll();
+  // const { selectedTab, setSelectedTab } = useScroll();
 
   const onTabClick = (tabIndex: number) => {
-    setSelectedTab(tabIndex);
+    // setSelectedTab(tabIndex);
   };
 
   return (

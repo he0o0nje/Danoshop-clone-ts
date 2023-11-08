@@ -20,7 +20,8 @@ import { useParams } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 
 function AboutPage() {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string | undefined }>();
+  const productId: number | undefined = parseInt(id || "");
   // const { selectedTab } = useScroll();
   // const sectionRefs = [useRef(), useRef(), useRef(), useRef()];
 
@@ -34,7 +35,7 @@ function AboutPage() {
     ...pm11,
     ...TryEat,
   ];
-  const product = dummy.find((item) => item.id === parseInt(id));
+  const product = dummy.find((item) => item.id === productId);
 
   // useEffect(() => {
   //   // 선택한 탭의 위치로 스크롤
