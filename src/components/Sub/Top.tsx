@@ -12,6 +12,15 @@ import pm9 from "../../data/product/9pm.json";
 import pm11 from "../../data/product/11pm.json";
 import TryEat from "../../data/product/TryEat.json";
 
+type OptionQuantityEntry = {
+  option: string;
+  quantity: number;
+};
+
+type OptionPrice = {
+  [option: string]: number;
+};
+
 function Top() {
   const { id } = useParams<{ id: string | undefined }>();
   const productId: number | undefined = parseInt(id || "");
@@ -27,10 +36,12 @@ function Top() {
   ];
   const product = dummy.find((item) => item.id === productId);
 
-  const [selectedOptions, setSelectedOptions] = useState([]);
-  const [optionQuantities, setOptionQuantities] = useState([]);
+  const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
+  const [optionQuantities, setOptionQuantities] = useState<
+    OptionQuantityEntry[]
+  >([]);
 
-  const handleProductSelect = (e) => {
+  const handleProductSelect = (e: ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = e.target.value;
 
     if (selectedValue === "") {
@@ -51,7 +62,7 @@ function Top() {
         dispatch(addSelectedOption(selectedValue));
 
         // 옵션 수량을 객체로 만들어 배열에 추가
-        const optionQuantityEntry = {
+        const optionQuantityEntry: OptionQuantityEntry = {
           option: selectedValue,
           quantity:
             optionQuantities.find((entry) => entry.option === selectedValue)
@@ -64,7 +75,7 @@ function Top() {
     }
   };
 
-  const handleProductDelete = (selectedOption) => {
+  const handleProductDelete = (selectedOption: string) => {
     setSelectedOptions(
       selectedOptions.filter((option) => option !== selectedOption)
     );
@@ -74,7 +85,10 @@ function Top() {
     setOptionQuantities(updatedOptionQuantities);
   };
 
-  const handleQuantityChange = (event, selectedOption) => {
+  const handleQuantityChange = (
+    event: ChangeEvent<HTMLInputElement>,
+    selectedOption: string
+  ) => {
     const newQuantity = parseInt(event.target.value);
     const updatedOptionQuantities = optionQuantities.map((entry) => {
       if (entry.option === selectedOption) {
@@ -86,15 +100,15 @@ function Top() {
   };
 
   // 옵션별 가격을 저장하는 객체
-  const optionPrices = {};
+  const optionPrices: OptionPrice = {};
 
-  product.top[0].select.forEach((option) => {
+  product?.top[0].select.forEach((option) => {
     const priceWithoutWon = option.sale_price || option.price;
     const optionPrice = parseInt(priceWithoutWon.replace(/,/g, ""));
     optionPrices[option.option] = optionPrice;
   });
 
-  const calculateSubTotal = (option) => {
+  const calculateSubTotal = (option: string) => {
     const optionQuantityEntry = optionQuantities.find(
       (entry) => entry.option === option
     );
@@ -119,7 +133,7 @@ function Top() {
 
   const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
 
-  function SendToCart(item) {
+  function SendToCart(item: any) {
     const cartItems = selectedOptions.map((option) => {
       const optionQuantityEntry = optionQuantities.find(
         (entry) => entry.option === option
@@ -127,7 +141,7 @@ function Top() {
       const quantity = optionQuantityEntry ? optionQuantityEntry.quantity : 0;
 
       // option을 찾아서 해당 option의 price 및 sale_price에 접근
-      const selectedProduct = product.top[0].select.find(
+      const selectedProduct = product?.top[0].select.find(
         (selectOption) => selectOption.option === option
       );
 
@@ -137,9 +151,9 @@ function Top() {
       const subTotal = calculateSubTotal(option); // 옵션별 총 금액
 
       return {
-        id: product.id,
-        img: product.image,
-        name: product.name,
+        id: product?.id,
+        img: product?.image,
+        name: product?.name,
         price: price,
         sale_price: salePrice,
         option: option,
@@ -184,20 +198,20 @@ function Top() {
           <style.ImgArea>
             <div className="prod_img">
               <Link to="">
-                <img src={product.top[0].product_imgB} alt="" />
+                <img src={product?.top[0].product_imgB} alt="" />
               </Link>
             </div>
             <div className="list_img">
               <ul>
                 <li>
-                  <img src={product.top[0].product_imgS} alt="" />
+                  <img src={product?.top[0].product_imgS} alt="" />
                 </li>
               </ul>
             </div>
           </style.ImgArea>
-          <style.InfoArea {...(product.top[0].discount ? { sale: true } : {})}>
+          <style.InfoArea {...(product?.top[0].discount ? { sale: true } : {})}>
             <div className="heading_area">
-              <h1>{product.top[0].header}</h1>
+              <h1>{product?.top[0].header}</h1>
             </div>
             <table className="sale_info">
               <tbody>
@@ -206,7 +220,7 @@ function Top() {
                     <span>상품요약정보</span>
                   </th>
                   <td>
-                    <span>{product.top[0].summary_info}</span>
+                    <span>{product?.top[0].summary_info}</span>
                   </td>
                 </tr>
                 <tr>
@@ -215,7 +229,7 @@ function Top() {
                   </th>
                   <td>
                     <span className="price">
-                      <strong>{product.top[0].price}</strong>
+                      <strong>{product?.top[0].price}</strong>
                     </span>
                   </td>
                 </tr>
@@ -225,8 +239,10 @@ function Top() {
                   </th>
                   <td>
                     <span className="sale_price">
-                      {product.top[0].sale_price}
-                      <span className="percent">{product.top[0].discount}</span>
+                      {product?.top[0].sale_price}
+                      <span className="percent">
+                        {product?.top[0].discount}
+                      </span>
                     </span>
                   </td>
                 </tr>
@@ -238,7 +254,7 @@ function Top() {
                   </th>
                   <td>
                     <span style={{ fontSize: "1.2rem", color: "#000" }}>
-                      {product.top[0].composition}
+                      {product?.top[0].composition}
                     </span>
                   </td>
                 </tr>
@@ -270,7 +286,7 @@ function Top() {
                     <select name="" id="" onChange={handleProductSelect}>
                       <option value="">- [필수] 옵션을 선택해 주세요 -</option>
                       <option value="">-------------------</option>
-                      {product.top[0].select.map((item, index) => (
+                      {product?.top[0].select.map((item, index) => (
                         <option key={index}>{item.option}</option>
                       ))}
                     </select>
@@ -288,7 +304,7 @@ function Top() {
                     <tr>
                       <td>
                         <p className="product">
-                          {product.top[0].header}
+                          {product?.top[0].header}
                           <br></br> - <span>{selectedOption}</span>
                         </p>
                       </td>
@@ -395,7 +411,7 @@ function Top() {
                   className="btn_submit sizeL"
                   onClick={() => {
                     goCart();
-                    SendToCart();
+                    SendToCart(item);
                   }}
                 >
                   구매하기
