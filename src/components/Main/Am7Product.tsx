@@ -1,5 +1,6 @@
+import React from "react";
 import * as style from "./ProductStyle";
-import dummy from "../../data/product/11pm.json";
+import dummy from "../../data/product/7am.json";
 import { Link } from "react-router-dom";
 
 function Product() {

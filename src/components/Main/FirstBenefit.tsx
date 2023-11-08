@@ -1,3 +1,4 @@
+import React from "react";
 import * as title from "./ProdTitStyle";
 import * as style from "./FirstBenefitStyle";
 import dummy from "../../data/main/1stBenefit.json";

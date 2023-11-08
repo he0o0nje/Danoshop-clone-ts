@@ -1,3 +1,4 @@
+import React from "react";
 import * as style from "./BotBannerStyle";
 import { Link } from "react-router-dom";
 

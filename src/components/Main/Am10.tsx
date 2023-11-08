@@ -1,3 +1,4 @@
+import React from "react";
 import * as style from "./ProdTitStyle";
 import Product from "./Am10Product";
 

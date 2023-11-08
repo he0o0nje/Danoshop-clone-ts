@@ -1,11 +1,12 @@
+import React from "react";
 import * as style from "./ProductStyle";
-import dummy from "../../data/product/6pm.json";
+import dummy from "../../data/product/11pm.json";
 import { Link } from "react-router-dom";
 
 function Product() {
   return (
     <>
-      <style.MainProdList small>
+      <style.MainProdList>
         <ul className="prod_list">
           {dummy.map((item, index) => (
             <li className="product" key={index}>

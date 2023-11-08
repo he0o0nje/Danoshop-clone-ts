@@ -1,5 +1,6 @@
+import React from "react";
 import * as style from "./ProductStyle";
-import dummy from "../../data/product/10am.json";
+import dummy from "../../data/product/9pm.json";
 import { Link } from "react-router-dom";
 
 function Product() {
@@ -26,10 +27,12 @@ function Product() {
                     <Link to={`detail/${item.id}`}>{item.name}</Link>
                   </div>
                   <ul>
-                    <li className="composition">
-                      <strong>구성 : </strong>
-                      <span>{item.composition}</span>
-                    </li>
+                    {dummy.composition && (
+                      <li className="composition">
+                        <strong>구성 : </strong>
+                        <span>{item.composition}</span>
+                      </li>
+                    )}
                     <li className="price">
                       <span>{item.price}</span>
                     </li>

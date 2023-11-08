@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const MainProdList = styled.div`
+interface MainProdListProps {
+  small: boolean;
+}
+
+export const MainProdList = styled.div<MainProdListProps>`
   margin-top: 2.2rem;
   .prod_list {
     margin: 0 -1rem 0;
@@ -17,7 +21,11 @@ export const MainProdList = styled.div`
   }
 `;
 
-export const MainProd = styled.div`
+interface MainProdProps {
+  sale: boolean;
+}
+
+export const MainProd = styled.div<MainProdProps>`
   margin: 0 1rem;
   .prod_thumb {
     position: relative;

@@ -1,15 +1,16 @@
+import React from "react";
 import * as style from "./ProductStyle";
-import dummy from "../../data/product/TryEat.json";
+import dummy from "../../data/product/10am.json";
 import { Link } from "react-router-dom";
 
 function Product() {
   return (
     <>
-      <style.MainProdList>
+      <style.MainProdList small>
         <ul className="prod_list">
           {dummy.map((item, index) => (
             <li className="product" key={index}>
-              <style.MainProd {...(item.sticker ? { sale: true } : {})}>
+              <style.MainProd sale={!!item.sticker}>
                 <div className="prod_thumb">
                   <Link to={`detail/${item.id}`}>
                     <img src={item.image} alt="" />
@@ -19,7 +20,12 @@ function Product() {
                     <span>ADD</span>
                     <span>OPTION</span>
                   </div>
-                  <span className="sale_sticker">{item.sticker}</span>
+                  <span
+                    className="sale_sticker"
+                    style={{ opacity: item.sticker ? 1 : 0 }}
+                  >
+                    {item.sticker}
+                  </span>
                 </div>
                 <div className="prod_desc">
                   <div className="name">
@@ -37,9 +43,6 @@ function Product() {
                       <span>{item.sale_price}</span>
                     </li>
                   </ul>
-                  {/* <div className="ico_soldout">
-                    <img src="img/icon/ico_product_soldout.gif" alt="" />
-                  </div> */}
                 </div>
               </style.MainProd>
             </li>

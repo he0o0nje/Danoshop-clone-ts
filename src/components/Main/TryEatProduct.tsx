@@ -1,11 +1,12 @@
+import React from "react";
 import * as style from "./ProductStyle";
-import dummy from "../../data/product/9pm.json";
+import dummy from "../../data/product/TryEat.json";
 import { Link } from "react-router-dom";
 
 function Product() {
   return (
     <>
-      <style.MainProdList small>
+      <style.MainProdList>
         <ul className="prod_list">
           {dummy.map((item, index) => (
             <li className="product" key={index}>
@@ -26,12 +27,10 @@ function Product() {
                     <Link to={`detail/${item.id}`}>{item.name}</Link>
                   </div>
                   <ul>
-                    {dummy.composition && (
-                      <li className="composition">
-                        <strong>구성 : </strong>
-                        <span>{item.composition}</span>
-                      </li>
-                    )}
+                    <li className="composition">
+                      <strong>구성 : </strong>
+                      <span>{item.composition}</span>
+                    </li>
                     <li className="price">
                       <span>{item.price}</span>
                     </li>
@@ -39,6 +38,9 @@ function Product() {
                       <span>{item.sale_price}</span>
                     </li>
                   </ul>
+                  {/* <div className="ico_soldout">
+                    <img src="img/icon/ico_product_soldout.gif" alt="" />
+                  </div> */}
                 </div>
               </style.MainProd>
             </li>
