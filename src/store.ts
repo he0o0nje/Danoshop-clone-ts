@@ -9,6 +9,8 @@ interface ProductItem {
   option: string;
   quantity: number;
   finalPrice?: string;
+  img: string;
+  options: string;
 }
 
 interface CartState {
@@ -89,25 +91,27 @@ let cart = createSlice({
         alert("상품이 더 이상 없습니다.");
       }
     },
-    addItem(state, action: PayloadAction<ProductItem>) {
-      let product = state.items.find((item) => item.id === action.payload.id);
-      if (product) {
-        product.quantity++;
-        product.finalPrice = (
-          parseFloat(product.price.replace(/,/g, "")) * product.quantity
-        ).toLocaleString();
-        // state.items.push(action.payload);
-        // state.quantity = state.items.reduce(
-        //   (total, item) => total + item.quantity,
-        //   0
-        // );
-      } else {
-        state.items.push({
-          ...action.payload,
-          quantity: 1,
-          finalPrice: action.payload.price,
-        });
-      }
+    addItem(state, action: PayloadAction<ProductItem[]>) {
+      action.payload.forEach((productItem) => {
+        let product = state.items.find((item) => item.id === productItem.id);
+        if (product) {
+          product.quantity++;
+          product.finalPrice = (
+            parseFloat(product.price.replace(/,/g, "")) * product.quantity
+          ).toLocaleString();
+          // state.items.push(action.payload);
+          // state.quantity = state.items.reduce(
+          //   (total, item) => total + item.quantity,
+          //   0
+          // );
+        } else {
+          state.items.push({
+            ...productItem,
+            quantity: 1,
+            finalPrice: productItem.price,
+          });
+        }
+      });
     },
     deleteItem(state, action: PayloadAction<string>) {
       state.items = state.items.filter((item) => item.id !== action.payload);
@@ -250,6 +254,14 @@ const products = createSlice({
 });
 
 export const { setProducts } = products.actions;
+
+export interface RootState {
+  selectedOptions: ReturnType<(typeof selectedOptions)["reducer"]>;
+  cart: ReturnType<(typeof cart)["reducer"]>;
+  calculatePrice: ReturnType<(typeof calculatePrice)["reducer"]>;
+  detail: ReturnType<(typeof detail)["reducer"]>;
+  products: ReturnType<(typeof products)["reducer"]>;
+}
 
 const rootReducer = {
   selectedOptions: selectedOptions.reducer,

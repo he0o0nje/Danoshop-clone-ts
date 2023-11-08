@@ -14,24 +14,29 @@ import {
   totalPrice,
   finalPrice,
 } from "../../store";
+import { RootState } from "../../store";
 import { Link } from "react-router-dom";
 
 function Cart() {
-  window.scroll({ top: 0, behavior: "instant" });
+  React.useEffect(() => {
+    window.scroll({ top: 0, behavior: "instant" });
+  }, []);
 
   const dispatch = useDispatch();
-  const items = useSelector((state) => state.cart.items);
+  const items = useSelector((state: RootState) => state.cart.items);
   // const totalQuantity = useSelector((state) => state.cart.quantity);
 
   // 체크박스 전체선택/해제
-  const [selectAll, setSelectAll] = useState(false);
-  const [checkboxes, setCheckboxes] = useState({});
-  const [selectedItems, setSelectedItems] = useState([]);
+  const [selectAll, setSelectAll] = React.useState(false);
+  const [checkboxes, setCheckboxes] = React.useState<Record<string, boolean>>(
+    {}
+  );
+  const [selectedItems, setSelectedItems] = React.useState<string[]>([]);
 
   useEffect(() => {
     // items 기반으로 checkboxes 상태 초기화
     // items 배열이 변경될 때마다 checkboxes 상태 초기화
-    const initialCheckboxes = {};
+    const initialCheckboxes: Record<string, boolean> = {};
     items.forEach((item) => {
       initialCheckboxes[item.id] = false;
     });
@@ -47,7 +52,7 @@ function Cart() {
     setSelectAll(!selectAll);
   };
 
-  const handleSingleCheck = (id) => {
+  const handleSingleCheck = (id: string) => {
     const updatedSelectedItems = [...selectedItems];
 
     if (checkboxes[id]) {
@@ -84,7 +89,7 @@ function Cart() {
 
     // 선택한 항목을 지우고 확인란을 재설정
     setSelectedItems([]);
-    const initialCheckboxes = {};
+    const initialCheckboxes: Record<string, boolean> = {};
     items.forEach((item) => {
       initialCheckboxes[item.id] = false;
     });
@@ -99,16 +104,16 @@ function Cart() {
     dispatch(finalPrice({ items }));
   }, [dispatch, items]);
   const calculateItemPriceValue = useSelector(
-    (state) => state.calculatePrice.calculateItemPrice
+    (state: RootState) => state.calculatePrice.calculateItemPrice
   );
   const totalDiscountValue = useSelector(
-    (state) => state.calculatePrice.totalDiscount
+    (state: RootState) => state.calculatePrice.totalDiscount
   );
   const totalPriceValue = useSelector(
-    (state) => state.calculatePrice.totalPrice
+    (state: RootState) => state.calculatePrice.totalPrice
   );
   const finalPriceValue = useSelector(
-    (state) => state.calculatePrice.finalPrice
+    (state: RootState) => state.calculatePrice.finalPrice
   );
 
   return (
@@ -248,7 +253,7 @@ function Cart() {
                           </div>
                           <div className="sum_price">
                             <span className="label">주문금액</span>
-                            <strong>{calculateItemPriceValue[index]}</strong>원
+                            <strong>{calculateItemPriceValue}</strong>원
                           </div>
                           <div className="btn_group">
                             <button>관심상품</button>

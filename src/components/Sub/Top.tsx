@@ -97,11 +97,28 @@ function Top() {
     setOptionQuantities(updatedOptionQuantities);
   };
 
+  // const handleQuantityChange = (
+  //   event: React.ChangeEvent<HTMLInputElement>,
+  //   selectedOption: string
+  // ) => {
+  //   const newQuantity = parseInt(event.target.value);
+  //   const updatedOptionQuantities = optionQuantities.map((entry) => {
+  //     if (entry.option === selectedOption) {
+  //       entry.quantity = newQuantity;
+  //     }
+  //     return entry;
+  //   });
+  //   setOptionQuantities(updatedOptionQuantities);
+  // };
   const handleQuantityChange = (
-    event: React.ChangeEvent<HTMLInputElement>,
+    newQuantity: number,
     selectedOption: string
   ) => {
-    const newQuantity = parseInt(event.target.value);
+    if (!selectedOption) {
+      // 선택된 옵션이 없을 경우 처리
+      return;
+    }
+
     const updatedOptionQuantities = optionQuantities.map((entry) => {
       if (entry.option === selectedOption) {
         entry.quantity = newQuantity;
@@ -174,9 +191,9 @@ function Top() {
       };
     });
 
-    cartItems.forEach((cartItems: ProductItem) => {
-      dispatch(addItem(cartItems));
-      console.log(cartItems);
+    cartItems.forEach((cartItem) => {
+      dispatch(addItem(cartItem));
+      console.log(cartItem);
     });
   }
 
@@ -330,50 +347,39 @@ function Top() {
                               )?.quantity || 0
                             }
                             onChange={(e) =>
-                              handleQuantityChange(e, selectedOption)
+                              handleQuantityChange(
+                                parseInt(e.target.value),
+                                selectedOption
+                              )
                             }
                           />
                           <button
                             className="up"
-                            onClick={() =>
+                            onClick={() => {
+                              const currentQuantity =
+                                optionQuantities.find(
+                                  (entry) => entry.option === selectedOption
+                                )?.quantity || 0;
                               handleQuantityChange(
-                                {
-                                  target: {
-                                    value:
-                                      String(
-                                        optionQuantities.find(
-                                          (entry) =>
-                                            entry.option === selectedOption
-                                        )?.quantity || 0
-                                      ) + 1,
-                                  },
-                                },
+                                currentQuantity + 1,
                                 selectedOption
-                              )
-                            }
+                              );
+                            }}
                           >
                             +
                           </button>
                           <button
                             className="down"
-                            onClick={() =>
+                            onClick={() => {
+                              const currentQuantity =
+                                optionQuantities.find(
+                                  (entry) => entry.option === selectedOption
+                                )?.quantity || 0;
                               handleQuantityChange(
-                                {
-                                  target: {
-                                    value: String(
-                                      Math.max(
-                                        (optionQuantities.find(
-                                          (entry) =>
-                                            entry.option === selectedOption
-                                        )?.quantity || 0) - 1,
-                                        1
-                                      )
-                                    ),
-                                  },
-                                },
+                                Math.max(currentQuantity - 1, 1),
                                 selectedOption
-                              )
-                            }
+                              );
+                            }}
                           >
                             -
                           </button>
