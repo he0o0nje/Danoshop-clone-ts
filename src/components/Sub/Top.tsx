@@ -21,17 +21,18 @@ type OptionPrice = {
   [option: string]: number;
 };
 
-type ProductItem = {
-  id?: number;
-  img?: string;
-  name?: string;
+interface CartItem {
+  id: string | number | undefined;
+  img: string | undefined;
+  name: string | undefined;
   price: string;
   sale_price: string;
   option: string;
   quantity: number;
   subTotal: number;
-  image?: string;
-};
+  image?: string | undefined;
+  options: string[];
+}
 
 function Top() {
   const { id } = useParams<{ id: string | undefined }>();
@@ -163,7 +164,7 @@ function Top() {
   const item = useSelector((state: any) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
 
   function SendToCart(item: any) {
-    const cartItems: ProductItem[] = selectedOptions.map((option) => {
+    const cartItems: CartItem[] = selectedOptions.map((option) => {
       const optionQuantityEntry = optionQuantities.find(
         (entry) => entry.option === option
       );
@@ -188,11 +189,12 @@ function Top() {
         option: option,
         quantity: quantity,
         subTotal: subTotal,
+        options: [],
       };
     });
 
     // cartItems를 개별로 dispatch
-    cartItems.forEach((cartItem) => {
+    cartItems.forEach((cartItem: any) => {
       dispatch(addItem([cartItem]));
       console.log(cartItem);
     });

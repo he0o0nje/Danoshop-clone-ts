@@ -10,7 +10,7 @@ interface ProductItem {
   quantity: number;
   finalPrice?: string;
   img: string;
-  options: string[];
+  options?: string[];
 }
 
 interface CartState {
@@ -99,6 +99,7 @@ let cart = createSlice({
           product.finalPrice = (
             parseFloat(product.price.replace(/,/g, "")) * product.quantity
           ).toLocaleString();
+          product.options = productItem.options;
           // state.items.push(action.payload);
           // state.quantity = state.items.reduce(
           //   (total, item) => total + item.quantity,
@@ -109,6 +110,7 @@ let cart = createSlice({
             ...productItem,
             quantity: 1,
             finalPrice: productItem.price,
+            options: productItem.options,
           });
         }
       });
