@@ -265,7 +265,8 @@ function Cart() {
                             </div>
                             <div className="sum_price">
                               <span className="label">주문금액</span>
-                              <strong>{calculateItemPriceValue}</strong>원
+                              <strong>{calculateItemPriceValue[index]}</strong>
+                              원
                             </div>
                             <div className="btn_group">
                               <button>관심상품</button>

@@ -134,7 +134,7 @@ let cart = createSlice({
 export const { addCount, decreaseCount, addItem, deleteItem } = cart.actions;
 
 interface PriceCalculation {
-  calculateItemPrice: number;
+  calculateItemPrice: number[];
   totalDiscount: number;
   totalPrice: number;
   finalPrice: number;
@@ -143,7 +143,7 @@ interface PriceCalculation {
 const calculatePrice = createSlice({
   name: "calculatePrice",
   initialState: {
-    calculateItemPrice: 0,
+    calculateItemPrice: [0],
     totalDiscount: 0,
     totalPrice: 0,
     finalPrice: 0,
@@ -159,10 +159,11 @@ const calculatePrice = createSlice({
         return quantity * price;
       });
       // state.calculateItemPrice = calculatedItemPrice;
-      state.calculateItemPrice = calculatedItemPrice.reduce(
-        (total, itemPrice) => total + itemPrice,
-        0
-      );
+      state.calculateItemPrice = calculatedItemPrice;
+      // .reduce(
+      //   (total, itemPrice) => total + itemPrice,
+      //   0
+      // );
     },
     totalDiscount(state, action: PayloadAction<{ items: ProductItem[] }>) {
       const { items } = action.payload;
