@@ -191,8 +191,9 @@ function Top() {
       };
     });
 
+    // cartItems를 개별로 dispatch
     cartItems.forEach((cartItem) => {
-      dispatch(addItem(cartItem));
+      dispatch(addItem([cartItem]));
       console.log(cartItem);
     });
   }

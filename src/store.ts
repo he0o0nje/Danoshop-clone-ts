@@ -10,7 +10,7 @@ interface ProductItem {
   quantity: number;
   finalPrice?: string;
   img: string;
-  options: string;
+  options: string[];
 }
 
 interface CartState {
