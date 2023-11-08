@@ -116,6 +116,12 @@ function Cart() {
     (state: RootState) => state.calculatePrice.finalPrice
   );
 
+  const [showContents, setShowContents] = useState(true);
+
+  const toggleContents = () => {
+    setShowContents(!showContents);
+  };
+
   return (
     <>
       <TopBanner />
@@ -151,150 +157,158 @@ function Cart() {
             <div className="cart">
               <div className="cart_prod">
                 <div className="inner">
-                  <div className="title">
+                  <style.Title
+                    showContents={showContents}
+                    onClick={toggleContents}
+                  >
                     <h3>장바구니 상품</h3>
-                  </div>
-                  <div className="contents">
-                    <div className="sub_title">일반상품(1)</div>
-                    {items.map((product, index) => (
-                      <div className="order_list" key={index}>
-                        <div className="prod_box">
-                          <input
-                            type="checkbox"
-                            className="check"
-                            checked={checkboxes[product.id]}
-                            onChange={() => handleSingleCheck(product.id)}
-                          />{" "}
-                          &nbsp;
-                          <div className="thumbnail">
-                            <Link to={`/detail/${product.id}`}>
-                              <img
-                                src={product.img ? product.img : product.image}
-                                alt=""
-                              />
-                            </Link>
-                          </div>
-                          <div className="description">
-                            <strong>
-                              <Link
-                                to={`/detail/${product.id}`}
-                                className="name"
-                              >
-                                {product.name}
+                  </style.Title>
+                  {showContents && (
+                    <div className="contents">
+                      <div className="sub_title">일반상품(1)</div>
+                      {items.map((product, index) => (
+                        <div className="order_list" key={index}>
+                          <div className="prod_box">
+                            <input
+                              type="checkbox"
+                              className="check"
+                              checked={checkboxes[product.id]}
+                              onChange={() => handleSingleCheck(product.id)}
+                            />{" "}
+                            &nbsp;
+                            <div className="thumbnail">
+                              <Link to={`/detail/${product.id}`}>
+                                <img
+                                  src={
+                                    product.img ? product.img : product.image
+                                  }
+                                  alt=""
+                                />
                               </Link>
-                            </strong>
-                            <ul className="price">
+                            </div>
+                            <div className="description">
+                              <strong>
+                                <Link
+                                  to={`/detail/${product.id}`}
+                                  className="name"
+                                >
+                                  {product.name}
+                                </Link>
+                              </strong>
+                              <ul className="price">
+                                <li>
+                                  <strong>
+                                    {product.price.replace(/원/, "")}
+                                  </strong>
+                                  원
+                                </li>
+                                <li>
+                                  <span className="discount">
+                                    -
+                                    {product.sale_price
+                                      ? parseInt(
+                                          product.price.replace(/,/g, "")
+                                        ) -
+                                        parseInt(
+                                          product.sale_price.replace(/,/g, "")
+                                        )
+                                      : 0}
+                                  </span>
+                                  원
+                                </li>
+                              </ul>
+                              <ul className="delivery_info">
+                                <li>
+                                  배송 : <span>3,500원</span> [조건] / 기본배송
+                                </li>
+                              </ul>
+                            </div>
+                            <ul className="option_grp">
                               <li>
-                                <strong>
-                                  {product.price.replace(/원/, "")}
-                                </strong>
-                                원
-                              </li>
-                              <li>
-                                <span className="discount">
-                                  -
-                                  {product.sale_price
-                                    ? parseInt(
-                                        product.price.replace(/,/g, "")
-                                      ) -
-                                      parseInt(
-                                        product.sale_price.replace(/,/g, "")
-                                      )
-                                    : 0}
-                                </span>
-                                원
+                                <div className="name">
+                                  <span>
+                                    [옵션:{" "}
+                                    {product.options
+                                      ? product.options
+                                      : product.option}
+                                    ]
+                                  </span>
+                                </div>
                               </li>
                             </ul>
-                            <ul className="delivery_info">
-                              <li>
-                                배송 : <span>3,500원</span> [조건] / 기본배송
-                              </li>
-                            </ul>
-                          </div>
-                          <ul className="option_grp">
-                            <li>
-                              <div className="name">
-                                <span>
-                                  [옵션:{" "}
-                                  {product.options
-                                    ? product.options
-                                    : product.option}
-                                  ]
+                            <div className="quantity">
+                              <span className="label">수량</span>
+                              <div>
+                                <span className="change_btn">
+                                  <input type="text" value={product.quantity} />
+                                  <button
+                                    className="up"
+                                    onClick={() => {
+                                      // 상품 수량 증가 액션을 디스패치
+                                      dispatch(addCount(product.id));
+                                    }}
+                                  >
+                                    +
+                                  </button>
+                                  <button
+                                    className="down"
+                                    onClick={() => {
+                                      // 상품 수량 감소 액션을 디스패치
+                                      dispatch(decreaseCount(product.id));
+                                    }}
+                                  >
+                                    -
+                                  </button>
                                 </span>
+                                <button className="modify">변경</button>
                               </div>
-                            </li>
-                          </ul>
-                          <div className="quantity">
-                            <span className="label">수량</span>
-                            <div>
-                              <span className="change_btn">
-                                <input type="text" value={product.quantity} />
-                                <button
-                                  className="up"
-                                  onClick={() => {
-                                    // 상품 수량 증가 액션을 디스패치
-                                    dispatch(addCount(product.id));
-                                  }}
-                                >
-                                  +
-                                </button>
-                                <button
-                                  className="down"
-                                  onClick={() => {
-                                    // 상품 수량 감소 액션을 디스패치
-                                    dispatch(decreaseCount(product.id));
-                                  }}
-                                >
-                                  -
-                                </button>
-                              </span>
-                              <button className="modify">변경</button>
+                            </div>
+                            <div className="sum_price">
+                              <span className="label">주문금액</span>
+                              <strong>{calculateItemPriceValue}</strong>원
+                            </div>
+                            <div className="btn_group">
+                              <button>관심상품</button>
+                              <button>주문하기</button>
                             </div>
                           </div>
-                          <div className="sum_price">
-                            <span className="label">주문금액</span>
-                            <strong>{calculateItemPriceValue}</strong>원
-                          </div>
-                          <div className="btn_group">
-                            <button>관심상품</button>
-                            <button>주문하기</button>
-                          </div>
+                          <button
+                            className="delete_btn"
+                            onClick={() => {
+                              // 상품 삭제 액션을 디스패치
+                              dispatch(deleteItem(product.id));
+                            }}
+                          >
+                            삭제
+                          </button>
                         </div>
-                        <button
-                          className="delete_btn"
-                          onClick={() => {
-                            // 상품 삭제 액션을 디스패치
-                            dispatch(deleteItem(product.id));
-                          }}
-                        >
-                          삭제
-                        </button>
-                      </div>
-                    ))}
-                    <div className="summary">
-                      <div className="title">
-                        <h5>[기본배송]</h5>
-                      </div>
-                      <div className="contents">
-                        상품구매금액 <strong>{totalPriceValue}</strong> + 배송비
-                        <strong>
-                          {" "}
-                          {totalPriceValue >= 70000 ? "0 (무료)" : "3,500"}
-                        </strong>
-                        <span className="sale">
-                          {" "}
-                          - 상품할인금액 {totalDiscountValue}
+                      ))}
+                      <div className="summary">
+                        <div className="title">
+                          <h5>[기본배송]</h5>
+                        </div>
+                        <div className="contents">
+                          상품구매금액 <strong>{totalPriceValue}</strong> +
+                          배송비
+                          <strong>
+                            {" "}
+                            {totalPriceValue >= 70000 ? "0 (무료)" : "3,500"}
+                          </strong>
+                          <span className="sale">
+                            {" "}
+                            - 상품할인금액 {totalDiscountValue}
+                          </span>
+                        </div>
+                        <span className="total">
+                          합계 : <strong>{finalPriceValue}</strong>원
                         </span>
                       </div>
-                      <span className="total">
-                        합계 : <strong>{finalPriceValue}</strong>원
-                      </span>
+                      <div className="base_btn">
+                        <button onClick={handleAllCheck}>전체선택</button>
+                        <button onClick={handleDeleteSelected}>선택삭제</button>
+                      </div>
                     </div>
-                    <div className="base_btn">
-                      <button onClick={handleAllCheck}>전체선택</button>
-                      <button onClick={handleDeleteSelected}>선택삭제</button>
-                    </div>
-                  </div>
+                  )}
                 </div>
               </div>
               <div className="cart_total">

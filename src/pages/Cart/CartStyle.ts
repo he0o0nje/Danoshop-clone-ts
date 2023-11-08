@@ -72,6 +72,37 @@ export const Cart = styled.div`
   }
 `;
 
+export const Title = styled.div<{ showContents: boolean }>`
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 2rem 0;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: ${({ showContents }) => (showContents ? "2rem" : "2.5rem")};
+    right: 0.5rem;
+    overflow: hidden;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-left: 0.1rem solid #000;
+    border-bottom: 0.1rem solid #000;
+    transform: ${({ showContents }) =>
+      showContents ? "rotate(-45deg)" : "rotate(135deg)"};
+    transition: 0.3s ease-out;
+  }
+`;
+
 export const CartContainer = styled.div`
   max-width: 1420px;
   width: 92%;
