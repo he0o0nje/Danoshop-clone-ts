@@ -76,7 +76,11 @@ export const ImgArea = styled.div`
   }
 `;
 
-export const InfoArea = styled.div`
+interface MainProdProps {
+  sale: boolean;
+}
+
+export const InfoArea = styled.div<MainProdProps>`
   letter-spacing: 0.017rem;
   width: 60rem;
   margin-left: 10rem;

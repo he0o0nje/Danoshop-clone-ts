@@ -21,6 +21,18 @@ type OptionPrice = {
   [option: string]: number;
 };
 
+type ProductItem = {
+  id?: number;
+  img?: string;
+  name?: string;
+  price: string;
+  sale_price: string;
+  option: string;
+  quantity: number;
+  subTotal: number;
+  image?: string;
+};
+
 function Top() {
   const { id } = useParams<{ id: string | undefined }>();
   const productId: number | undefined = parseInt(id || "");
@@ -86,7 +98,7 @@ function Top() {
   };
 
   const handleQuantityChange = (
-    event: ChangeEvent<HTMLInputElement>,
+    event: React.ChangeEvent<HTMLInputElement>,
     selectedOption: string
   ) => {
     const newQuantity = parseInt(event.target.value);
@@ -131,10 +143,10 @@ function Top() {
 
   let dispatch = useDispatch();
 
-  const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
+  const item = useSelector((state: any) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
 
   function SendToCart(item: any) {
-    const cartItems = selectedOptions.map((option) => {
+    const cartItems: ProductItem[] = selectedOptions.map((option) => {
       const optionQuantityEntry = optionQuantities.find(
         (entry) => entry.option === option
       );
@@ -162,7 +174,7 @@ function Top() {
       };
     });
 
-    cartItems.forEach((cartItems) => {
+    cartItems.forEach((cartItems: ProductItem) => {
       dispatch(addItem(cartItems));
       console.log(cartItems);
     });
@@ -209,7 +221,7 @@ function Top() {
               </ul>
             </div>
           </style.ImgArea>
-          <style.InfoArea {...(product?.top[0].discount ? { sale: true } : {})}>
+          <style.InfoArea sale={!!product?.top[0].discount}>
             <div className="heading_area">
               <h1>{product?.top[0].header}</h1>
             </div>
@@ -328,10 +340,12 @@ function Top() {
                                 {
                                   target: {
                                     value:
-                                      (optionQuantities.find(
-                                        (entry) =>
-                                          entry.option === selectedOption
-                                      )?.quantity || 0) + 1,
+                                      String(
+                                        optionQuantities.find(
+                                          (entry) =>
+                                            entry.option === selectedOption
+                                        )?.quantity || 0
+                                      ) + 1,
                                   },
                                 },
                                 selectedOption
@@ -346,12 +360,14 @@ function Top() {
                               handleQuantityChange(
                                 {
                                   target: {
-                                    value: Math.max(
-                                      (optionQuantities.find(
-                                        (entry) =>
-                                          entry.option === selectedOption
-                                      )?.quantity || 0) - 1,
-                                      1
+                                    value: String(
+                                      Math.max(
+                                        (optionQuantities.find(
+                                          (entry) =>
+                                            entry.option === selectedOption
+                                        )?.quantity || 0) - 1,
+                                        1
+                                      )
                                     ),
                                   },
                                 },
