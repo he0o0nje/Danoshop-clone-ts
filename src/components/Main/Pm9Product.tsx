@@ -10,7 +10,7 @@ function Product() {
         <ul className="prod_list">
           {dummy.map((item, index) => (
             <li className="product" key={index}>
-              <style.MainProd {...(item.sticker ? { sale: true } : {})}>
+              <style.MainProd sale={!!item.sticker}>
                 <div className="prod_thumb">
                   <Link to={`detail/${item.id}`}>
                     <img src={item.image} alt="" />
@@ -20,14 +20,19 @@ function Product() {
                     <span>ADD</span>
                     <span>OPTION</span>
                   </div>
-                  <span className="sale_sticker">{item.sticker}</span>
+                  <span
+                    className="sale_sticker"
+                    style={{ opacity: item.sticker ? 1 : 0 }}
+                  >
+                    {item.sticker}
+                  </span>
                 </div>
                 <div className="prod_desc">
                   <div className="name">
                     <Link to={`detail/${item.id}`}>{item.name}</Link>
                   </div>
                   <ul>
-                    {dummy.composition && (
+                    {item.composition && (
                       <li className="composition">
                         <strong>구성 : </strong>
                         <span>{item.composition}</span>
