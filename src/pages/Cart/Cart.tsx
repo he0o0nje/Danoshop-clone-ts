@@ -352,7 +352,9 @@ function Cart() {
                       <div className="list">
                         <div className="item">
                           <h5 className="title">기간할인</h5>
-                          <div className="data">3000원</div>
+                          <div className="data">
+                            {totalDiscountValue.toLocaleString()}원
+                          </div>
                         </div>
                       </div>
                     </div>
