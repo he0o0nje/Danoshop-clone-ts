@@ -54,6 +54,7 @@ function Top() {
     OptionQuantityEntry[]
   >([]);
 
+  // 선택한 옵션 데이터 만들기
   const handleProductSelect = (e: ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = e.target.value;
 
@@ -88,6 +89,7 @@ function Top() {
     }
   };
 
+  // 옵션별 삭제 기능
   const handleProductDelete = (selectedOption: string) => {
     setSelectedOptions(
       selectedOptions.filter((option) => option !== selectedOption)
@@ -98,19 +100,7 @@ function Top() {
     setOptionQuantities(updatedOptionQuantities);
   };
 
-  // const handleQuantityChange = (
-  //   event: React.ChangeEvent<HTMLInputElement>,
-  //   selectedOption: string
-  // ) => {
-  //   const newQuantity = parseInt(event.target.value);
-  //   const updatedOptionQuantities = optionQuantities.map((entry) => {
-  //     if (entry.option === selectedOption) {
-  //       entry.quantity = newQuantity;
-  //     }
-  //     return entry;
-  //   });
-  //   setOptionQuantities(updatedOptionQuantities);
-  // };
+  // 옵션별 수량 변경
   const handleQuantityChange = (
     newQuantity: number,
     selectedOption: string
@@ -119,7 +109,6 @@ function Top() {
       // 선택된 옵션이 없을 경우 처리
       return;
     }
-
     const updatedOptionQuantities = optionQuantities.map((entry) => {
       if (entry.option === selectedOption) {
         entry.quantity = newQuantity;
@@ -129,7 +118,32 @@ function Top() {
     setOptionQuantities(updatedOptionQuantities);
   };
 
-  // 옵션별 가격을 저장하는 객체
+  // 옵션별 원래 가격
+  function getPriceForOption(product: any, optionName: string): number {
+    const selectedOption = product?.top[0].select.find(
+      (option: any) => option.option === optionName
+    );
+
+    if (selectedOption) {
+      const priceWithoutCommas = selectedOption.price.replace(/,/g, "");
+      return parseInt(priceWithoutCommas);
+    }
+
+    return 0;
+  }
+  // 옵션별 원래 가격 * 수량
+  const optionTotalPrice = (option: string) => {
+    const optionQuantityEntry = optionQuantities.find(
+      (entry) => entry.option === option
+    );
+    if (optionQuantityEntry) {
+      const optionPrice = getPriceForOption(product, option);
+      return optionPrice * optionQuantityEntry.quantity;
+    }
+    return 0;
+  };
+
+  // 옵션별 할인 가격을 저장하는 객체
   const optionPrices: OptionPrice = {};
 
   product?.top[0].select.forEach((option) => {
@@ -137,7 +151,7 @@ function Top() {
     const optionPrice = parseInt(priceWithoutWon.replace(/,/g, ""));
     optionPrices[option.option] = optionPrice;
   });
-
+  // 옵션별 할인 가격 * 수량
   const calculateSubTotal = (option: string) => {
     const optionQuantityEntry = optionQuantities.find(
       (entry) => entry.option === option
@@ -149,11 +163,13 @@ function Top() {
     return 0;
   };
 
+  // 총 수량
   const totalQuantity = optionQuantities.reduce(
     (total, entry) => total + entry.quantity,
     0
   );
 
+  // 총 가격
   const totalPrice = selectedOptions.reduce((total, option) => {
     const subTotal = calculateSubTotal(option);
     return total + subTotal;
@@ -163,6 +179,7 @@ function Top() {
 
   const item = useSelector((state: any) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
 
+  // 장바구니로 보내기
   function SendToCart(item: any) {
     const cartItems: CartItem[] = selectedOptions.map((option) => {
       const optionQuantityEntry = optionQuantities.find(
@@ -187,9 +204,9 @@ function Top() {
         price: price,
         sale_price: salePrice,
         option: option,
-        quantity: quantity,
+        quantity: quantity, // 수량정보 수정 필요
         subTotal: subTotal,
-        options: [],
+        options: selectedOptions, // 옵션정보 수정 필요
       };
     });
 
@@ -396,7 +413,7 @@ function Top() {
                       </td>
                       <td>
                         <span className="right">
-                          <span>{calculateSubTotal(selectedOption)} 원</span>
+                          <span>{optionTotalPrice(selectedOption)} 원</span>
                         </span>
                       </td>
                     </tr>
