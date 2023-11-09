@@ -28,7 +28,7 @@ function Login() {
         <div className="login_form">
           <div className="login">
             <input type="text" placeholder="아이디" />
-            <input type="text" placeholder="비밀번호" />
+            <input type="password" placeholder="비밀번호" />
           </div>
         </div>
         <div className="security">
