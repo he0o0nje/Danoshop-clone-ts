@@ -56,7 +56,7 @@ let cart = createSlice({
         name: "[다노] 통밀 오트 베이글_식단용 건강빵",
         price: "8,900원",
         sale_price: "",
-        option: "-6%",
+        option: "[-6%]통밀 오트 베이글 (5개)",
         quantity: 2,
       },
       {
