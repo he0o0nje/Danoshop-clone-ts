@@ -40,6 +40,19 @@ export const HeaderTop = styled.div`
   li {
     font-size: 1.3rem;
     margin-left: 1.5rem;
+    a {
+      color: #666;
+      display: flex;
+      align-items: center;
+    }
+    .arrRgt {
+      width: 0.6rem;
+      height: 0.6rem;
+      margin-left: 0.5rem;
+      border-left: 0.1rem solid #000;
+      border-bottom: 0.1rem solid #000;
+      transform: rotate(-135deg);
+    }
   }
 `;
 
@@ -60,20 +73,6 @@ export const boardList = styled.div`
   .board_list a {
     font-size: 1.2rem;
     white-space: nowrap;
-  }
-`;
-
-export const Link = styled.a`
-  color: #666;
-  display: flex;
-  align-items: center;
-  .arrRgt {
-    width: 0.6rem;
-    height: 0.6rem;
-    margin-left: 0.5rem;
-    border-left: 0.1rem solid #000;
-    border-bottom: 0.1rem solid #000;
-    transform: rotate(-135deg);
   }
 `;
 

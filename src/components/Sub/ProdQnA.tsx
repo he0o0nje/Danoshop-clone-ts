@@ -1,6 +1,7 @@
 import * as style from "./ProdQnAStyle";
 import DetailTab from "./DetailTab";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ProdQnA() {
   // const [selectedTab, setSelectedTab] = useState(1);
@@ -29,12 +30,12 @@ function ProdQnA() {
           <style.BoardTit>
             <h2>Q&amp;A</h2>
             <div className="QnA_btn_wrap">
-              <a href="!" className="normal_btn">
+              <Link to="#" className="normal_btn">
                 LIST
-              </a>
-              <a href="!" className="normal_btn">
+              </Link>
+              <Link to="#" className="normal_btn">
                 WRITE
-              </a>
+              </Link>
             </div>
           </style.BoardTit>
           <style.Contents>
@@ -62,9 +63,12 @@ function ProdQnA() {
                   <td>306</td>
                   <td>기타문의</td>
                   <td className="left subject">
-                    <img src="/img/icon/ico_lock.gif" alt="" />
+                    <img
+                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_lock.gif"
+                      alt=""
+                    />
                     &nbsp;&nbsp;&nbsp;
-                    <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
+                    <Link to="#">다노샵 상품이 궁금해요🙋‍♀️</Link>
                     &nbsp;&nbsp;&nbsp;
                     <span className="comment"></span>
                   </td>
@@ -77,11 +81,17 @@ function ProdQnA() {
                   <td>기타문의</td>
                   <td className="left subject">
                     &nbsp;&nbsp;&nbsp;
-                    <img src="/img/icon/ico_re.gif" alt="" />
+                    <img
+                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_re.gif"
+                      alt=""
+                    />
                     &nbsp;&nbsp;&nbsp;
-                    <img src="/img/icon/ico_lock.gif" alt="" />
+                    <img
+                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_lock.gif"
+                      alt=""
+                    />
                     &nbsp;&nbsp;&nbsp;
-                    <a href="!">안녕하세요, 다노샵입니다. 💁‍♀️</a>
+                    <Link to="#">안녕하세요, 다노샵입니다. 💁‍♀️</Link>
                     &nbsp;&nbsp;&nbsp;
                     <span className="comment"></span>
                   </td>
@@ -93,9 +103,12 @@ function ProdQnA() {
                   <td>304</td>
                   <td>상품 문의</td>
                   <td className="left subject">
-                    <img src="/img/icon/ico_lock.gif" alt="" />
+                    <img
+                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_lock.gif"
+                      alt=""
+                    />
                     &nbsp;&nbsp;&nbsp;
-                    <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
+                    <Link to="#">다노샵 상품이 궁금해요🙋‍♀️</Link>
                     &nbsp;&nbsp;&nbsp;
                     <span className="comment"></span>
                   </td>
@@ -108,11 +121,17 @@ function ProdQnA() {
                   <td>상품 문의</td>
                   <td className="left subject">
                     &nbsp;&nbsp;&nbsp;
-                    <img src="/img/icon/ico_re.gif" alt="" />
+                    <img
+                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_re.gif"
+                      alt=""
+                    />
                     &nbsp;&nbsp;&nbsp;
-                    <img src="/img/icon/ico_lock.gif" alt="" />
+                    <img
+                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_lock.gif"
+                      alt=""
+                    />
                     &nbsp;&nbsp;&nbsp;
-                    <a href="!">안녕하세요, 다노샵입니다. 💁‍♀️</a>
+                    <Link to="#">안녕하세요, 다노샵입니다. 💁‍♀️</Link>
                     &nbsp;&nbsp;&nbsp;
                     <span className="comment"></span>
                   </td>
@@ -124,9 +143,12 @@ function ProdQnA() {
                   <td>302</td>
                   <td>기타문의</td>
                   <td className="left subject">
-                    <img src="/img/icon/ico_lock.gif" alt="" />
+                    <img
+                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_lock.gif"
+                      alt=""
+                    />
                     &nbsp;&nbsp;&nbsp;
-                    <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
+                    <Link to="#">다노샵 상품이 궁금해요🙋‍♀️</Link>
                     &nbsp;&nbsp;&nbsp;
                     <span className="comment"></span>
                   </td>
@@ -137,41 +159,41 @@ function ProdQnA() {
               </tbody>
             </table>
             <div className="paginate">
-              <a href="!" className="first">
+              <Link to="#" className="first">
                 첫 페이지
-              </a>
-              <a href="!">이전 페이지</a>
+              </Link>
+              <Link to="#">이전 페이지</Link>
               <ol>
                 <li>
-                  <a href="!" className="this">
+                  <Link to="#" className="this">
                     1
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="!" className="other">
+                  <Link to="#" className="other">
                     2
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="!" className="other">
+                  <Link to="#" className="other">
                     3
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="!" className="other">
+                  <Link to="#" className="other">
                     4
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="!" className="other">
+                  <Link to="#" className="other">
                     5
-                  </a>
+                  </Link>
                 </li>
               </ol>
-              <a href="!">다음 페이지</a>
-              <a href="!" className="last">
+              <Link to="#">다음 페이지</Link>
+              <Link to="#" className="last">
                 마지막 페이지
-              </a>
+              </Link>
             </div>
           </style.Contents>
         </div>

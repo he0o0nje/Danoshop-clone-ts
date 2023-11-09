@@ -1,7 +1,7 @@
 [
   {
     "id": 5,
-    "image": "/img/main/10am/01.png",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/10am/01.png",
     "sticker": "",
     "name": "[다노] 고백펌킨티_100% 국산 늙은 호박차 티백",
     "composition": "1팩/2팩/3팩",
@@ -9,8 +9,8 @@
     "sale_price": "",
     "top": [
       {
-        "product_imgB": "/img/sub/prod005/big01.png",
-        "product_imgS": "/img/sub/prod005/small01.png",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/big01.png",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/small01.png",
         "header": "[다노] 고백펌킨티_100% 국산 늙은 호박차 티백",
         "summary_info": "차는 짙어지고 나는 가벼워지고",
         "price": "12,000원",
@@ -39,15 +39,33 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod005/detail01.png" },
-          { "image": "/img/sub/prod005/detail02.png" },
-          { "image": "/img/sub/prod005/detail03.png" },
-          { "image": "/img/sub/prod005/detail04.png" },
-          { "image": "/img/sub/prod005/detail05.gif" },
-          { "image": "/img/sub/prod005/detail06.png" },
-          { "image": "/img/sub/prod005/detail07.png" },
-          { "image": "/img/sub/prod005/detail08.png" },
-          { "image": "/img/sub/prod005/detail09.png" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/detail02.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/detail03.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/detail04.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/detail05.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/detail06.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/detail07.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/detail08.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/detail09.png"
+          }
         ],
         "info_name": "",
         "keep": "",
@@ -55,14 +73,30 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod005/media01.jpg" },
-      { "media": "/img/sub/prod005/media02.jpg" },
-      { "media": "/img/sub/prod005/media03.jpg" },
-      { "media": "/img/sub/prod005/media04.jpg" },
-      { "media": "/img/sub/prod005/media05.jpg" },
-      { "media": "/img/sub/prod005/media06.jpg" },
-      { "media": "/img/sub/prod005/media07.jpg" },
-      { "media": "/img/sub/prod005/media08.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/media02.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/media03.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/media04.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/media05.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/media06.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/media07.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod005/media08.jpg"
+      }
     ],
     "review": [
       {
@@ -109,7 +143,7 @@
   },
   {
     "id": 6,
-    "image": "/img/main/10am/02.webp",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/10am/02.webp",
     "sticker": "",
     "name": "[다노] 클린티 2종",
     "composition": "1팩/2팩",
@@ -117,8 +151,8 @@
     "sale_price": "",
     "top": [
       {
-        "product_imgB": "/img/sub/prod006/big01.webp",
-        "product_imgS": "/img/sub/prod006/small01.png",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/big01.webp",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/small01.png",
         "header": "[다노] 클린티 2종",
         "summary_info": "하루 2잔 클린해지는 습관",
         "price": "14,900원",
@@ -147,21 +181,51 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod006/detail01.png" },
-          { "image": "/img/sub/prod006/detail02.png" },
-          { "image": "/img/sub/prod006/detail03.png" },
-          { "image": "/img/sub/prod006/detail04.png" },
-          { "image": "/img/sub/prod006/detail05.png" },
-          { "image": "/img/sub/prod006/detail06.png" },
-          { "image": "/img/sub/prod006/detail07.png" },
-          { "image": "/img/sub/prod006/detail08.png" },
-          { "image": "/img/sub/prod006/detail09.png" },
-          { "image": "/img/sub/prod006/detail10.mp4" },
-          { "image": "/img/sub/prod006/detail11.png" },
-          { "image": "/img/sub/prod006/detail12.png" },
-          { "image": "/img/sub/prod006/detail13.png" },
-          { "image": "/img/sub/prod006/detail14.png" },
-          { "image": "/img/sub/prod006/detail15.png" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail02.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail03.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail04.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail05.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail06.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail07.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail08.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail09.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail10.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail11.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail12.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail13.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail14.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/detail15.png"
+          }
         ],
         "info_name": "클린티 2종 (Wake up, Peace)",
         "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
@@ -169,14 +233,30 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod006/media01.jpg" },
-      { "media": "/img/sub/prod006/media02.jpg" },
-      { "media": "/img/sub/prod006/media03.jpg" },
-      { "media": "/img/sub/prod006/media04.jpg" },
-      { "media": "/img/sub/prod006/media05.jpg" },
-      { "media": "/img/sub/prod006/media06.jpg" },
-      { "media": "/img/sub/prod006/media07.jpg" },
-      { "media": "/img/sub/prod006/media08.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/media02.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/media03.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/media04.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/media05.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/media06.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/media07.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod006/media08.jpg"
+      }
     ],
     "review": [
       {

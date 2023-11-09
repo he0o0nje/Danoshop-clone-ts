@@ -80,7 +80,8 @@ export const Login = styled.div`
         position: relative;
         line-height: 1.7rem;
         input[type="checkbox"] {
-          background: url("/img/header/checkbox_off.svg") no-repeat center;
+          background: url("https://he0o0nje.github.io/Danoshop-clone-ts/img/header/checkbox_off.svg")
+            no-repeat center;
           border: 0.1rem solid #d9d9d9;
           width: 2.4rem;
           height: 2.4rem;
@@ -88,7 +89,8 @@ export const Login = styled.div`
           cursor: pointer;
         }
         input[type="checkbox"]:checked {
-          background: url(/img/header/checkbox_on.svg) no-repeat center;
+          background: url("https://he0o0nje.github.io/Danoshop-clone-ts/img/header/checkbox_on.svg")
+            no-repeat center;
         }
       }
       label {
@@ -194,16 +196,16 @@ export const Login = styled.div`
         justify-content: flex-end;
       }
       .btnKakao {
-        background: url("/img/icon/icon_sns_kakao.svg") no-repeat center left
-          24px;
+        background: url("https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/icon_sns_kakao.svg")
+          no-repeat center left 24px;
       }
       .btnNaver {
-        background: url("/img/icon/icon_sns_naver.svg") no-repeat center left
-          24px;
+        background: url("https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/icon_sns_naver.svg")
+          no-repeat center left 24px;
       }
       .btnApple {
-        background: url("/img/icon/icon_sns_apple.svg") no-repeat center left
-          24px;
+        background: url("https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/icon_sns_apple.svg")
+          no-repeat center left 24px;
       }
     }
   }

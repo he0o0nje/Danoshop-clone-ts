@@ -1,7 +1,7 @@
 [
   {
     "id": 7,
-    "image": "/img/main/1pm/01.webp",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/1pm/01.webp",
     "sticker": "",
     "name": "[다노] 오븐치킨 6종_식단관리 닭가슴살",
     "composition": "3/10/20개",
@@ -9,8 +9,8 @@
     "sale_price": "",
     "top": [
       {
-        "product_imgB": "/img/sub/prod007/big01.webp",
-        "product_imgS": "/img/sub/prod007/small01.png",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/big01.webp",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/small01.png",
         "header": "[다노] 오븐치킨 6종_식단관리 닭가슴살",
         "summary_info": "기름에 튀기지 않고 오븐에서 구워 촉촉한",
         "price": "8,100원",
@@ -109,29 +109,75 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod007/detail01.png" },
-          { "image": "/img/sub/prod007/detail02.png" },
-          { "image": "/img/sub/prod007/detail03.mp4" },
-          { "image": "/img/sub/prod007/detail04.mp4" },
-          { "image": "/img/sub/prod007/detail05.png" },
-          { "image": "/img/sub/prod007/detail06.png" },
-          { "image": "/img/sub/prod007/detail07.png" },
-          { "image": "/img/sub/prod007/detail08.png" },
-          { "image": "/img/sub/prod007/detail09.mp4" },
-          { "image": "/img/sub/prod007/detail10.mp4" },
-          { "image": "/img/sub/prod007/detail11.mp4" },
-          { "image": "/img/sub/prod007/detail12.png" },
-          { "image": "/img/sub/prod007/detail13.png" },
-          { "image": "/img/sub/prod007/detail14.mp4" },
-          { "image": "/img/sub/prod007/detail15.mp4" },
-          { "image": "/img/sub/prod007/detail16.mp4" },
-          { "image": "/img/sub/prod007/detail17.png" },
-          { "image": "/img/sub/prod007/detail18.png" },
-          { "image": "/img/sub/prod007/detail19.png" },
-          { "image": "/img/sub/prod007/detail20.png" },
-          { "image": "/img/sub/prod007/detail21.png" },
-          { "image": "/img/sub/prod007/detail22.png" },
-          { "image": "/img/sub/prod007/detail23.jpg" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail02.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail03.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail04.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail05.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail06.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail07.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail08.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail09.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail10.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail11.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail12.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail13.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail14.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail15.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail16.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail17.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail18.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail19.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail20.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail21.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail22.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/detail23.jpg"
+          }
         ],
         "info_name": "오븐치킨 6종 (오리지널, 왕갈비맛, 마그마)",
         "keep": "냉동보관",
@@ -139,14 +185,30 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod007/media01.jpg" },
-      { "media": "/img/sub/prod007/media02.jpg" },
-      { "media": "/img/sub/prod007/media03.jpg" },
-      { "media": "/img/sub/prod007/media04.jpg" },
-      { "media": "/img/sub/prod007/media05.jpg" },
-      { "media": "/img/sub/prod007/media06.jpg" },
-      { "media": "/img/sub/prod007/media07.jpg" },
-      { "media": "/img/sub/prod007/media08.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/media02.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/media03.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/media04.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/media05.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/media06.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/media07.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod007/media08.jpg"
+      }
     ],
     "review": [
       {
@@ -193,7 +255,7 @@
   },
   {
     "id": 8,
-    "image": "/img/main/1pm/02.png",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/1pm/02.png",
     "sticker": "40%",
     "name": "[다노] 곤약 볶음밥 3종_식단관리 저칼로리 냉동볶음밥",
     "composition": "10/20개",
@@ -201,8 +263,8 @@
     "sale_price": "17,000원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod008/big01.jpg",
-        "product_imgS": "/img/sub/prod008/small01.jpg",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/big01.jpg",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/small01.jpg",
         "header": "[다노] 곤약 볶음밥 3종_식단관리 저칼로리 냉동볶음밥",
         "summary_info": "단백질은 챙기고 나트륨을 낮춘 곤약볶음밥",
         "price": "28,330원",
@@ -246,22 +308,54 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod008/detail01.png" },
-          { "image": "/img/sub/prod008/detail02.jpg" },
-          { "image": "/img/sub/prod008/detail03.png" },
-          { "image": "/img/sub/prod008/detail04.jpg" },
-          { "image": "/img/sub/prod008/detail05.gif" },
-          { "image": "/img/sub/prod008/detail06.jpg" },
-          { "image": "/img/sub/prod008/detail07.gif" },
-          { "image": "/img/sub/prod008/detail08.jpg" },
-          { "image": "/img/sub/prod008/detail09.gif" },
-          { "image": "/img/sub/prod008/detail10.jpg" },
-          { "image": "/img/sub/prod008/detail11.gif" },
-          { "image": "/img/sub/prod008/detail12.jpg" },
-          { "image": "/img/sub/prod008/detail13.gif" },
-          { "image": "/img/sub/prod008/detail14.png" },
-          { "image": "/img/sub/prod008/detail15.png" },
-          { "image": "/img/sub/prod008/detail16.png" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail02.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail03.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail04.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail05.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail06.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail07.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail08.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail09.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail10.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail11.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail12.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail13.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail14.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail15.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/detail16.png"
+          }
         ],
         "info_name": "곤약 볶음밥 3종 (닭가슴살야채, 소불고기, 새우 계란)",
         "keep": "냉동보관",
@@ -269,14 +363,30 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod008/media01.jpg" },
-      { "media": "/img/sub/prod008/media02.jpg" },
-      { "media": "/img/sub/prod008/media03.jpg" },
-      { "media": "/img/sub/prod008/media04.jpg" },
-      { "media": "/img/sub/prod008/media05.jpg" },
-      { "media": "/img/sub/prod008/media06.jpg" },
-      { "media": "/img/sub/prod008/media07.jpg" },
-      { "media": "/img/sub/prod008/media08.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/media02.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/media03.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/media04.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/media05.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/media06.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/media07.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod008/media08.jpg"
+      }
     ],
     "review": [
       {
@@ -323,7 +433,7 @@
   },
   {
     "id": 9,
-    "image": "/img/main/1pm/03.png",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/1pm/03.png",
     "sticker": "",
     "name": "[다노] 닭가슴살 큐브_식단관리 닭가슴살",
     "composition": "5/10/20/30개",
@@ -331,8 +441,8 @@
     "sale_price": "",
     "top": [
       {
-        "product_imgB": "/img/sub/prod009/big01.png",
-        "product_imgS": "/img/sub/prod009/small01.png",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/big01.png",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/small01.png",
         "header": "[다노] 닭가슴살 큐브_식단관리 닭가슴살",
         "summary_info": "나트륨 함량을 확 낮춘 닭가슴살 큐브",
         "price": "10,000원",
@@ -406,20 +516,48 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod009/detail01.png" },
-          { "image": "/img/sub/prod009/detail02.png" },
-          { "image": "/img/sub/prod009/detail03.png" },
-          { "image": "/img/sub/prod009/detail04.png" },
-          { "image": "/img/sub/prod009/detail05.png" },
-          { "image": "/img/sub/prod009/detail06.png" },
-          { "image": "/img/sub/prod009/detail07.png" },
-          { "image": "/img/sub/prod009/detail08.mp4" },
-          { "image": "/img/sub/prod009/detail09.png" },
-          { "image": "/img/sub/prod009/detail10.png" },
-          { "image": "/img/sub/prod009/detail11.png" },
-          { "image": "/img/sub/prod009/detail12.png" },
-          { "image": "/img/sub/prod009/detail13.png" },
-          { "image": "/img/sub/prod009/detail14.png" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail02.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail03.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail04.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail05.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail06.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail07.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail08.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail09.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail10.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail11.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail12.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail13.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/detail14.png"
+          }
         ],
         "info_name": "닭가슴살 큐브 3종 (오리지널, 청양고추, 허브)",
         "keep": "냉동보관",
@@ -427,14 +565,30 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod009/media01.jpg" },
-      { "media": "/img/sub/prod009/media02.jpg" },
-      { "media": "/img/sub/prod009/media03.jpg" },
-      { "media": "/img/sub/prod009/media04.jpg" },
-      { "media": "/img/sub/prod009/media05.jpg" },
-      { "media": "/img/sub/prod009/media06.jpg" },
-      { "media": "/img/sub/prod009/media07.jpg" },
-      { "media": "/img/sub/prod009/media08.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/media02.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/media03.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/media04.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/media05.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/media06.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/media07.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod009/media08.jpg"
+      }
     ],
     "review": [
       {
@@ -481,7 +635,7 @@
   },
   {
     "id": 10,
-    "image": "/img/main/1pm/04.png",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/1pm/04.png",
     "sticker": "",
     "name": "[다노] 통밀 오트 베이글_식단용 건강빵",
     "composition": "5/10/20/36개",
@@ -489,8 +643,8 @@
     "sale_price": "",
     "top": [
       {
-        "product_imgB": "/img/sub/prod010/big01.png",
-        "product_imgS": "/img/sub/prod010/small01.png",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/big01.png",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/small01.png",
         "header": "[다노] 통밀 오트 베이글_식단용 건강빵",
         "summary_info": "간편하게 즐기는 뉴욕 브런치",
         "price": "8,900원",
@@ -524,11 +678,21 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod010/detail01.png" },
-          { "image": "/img/sub/prod010/detail02.png" },
-          { "image": "/img/sub/prod010/detail03.png" },
-          { "image": "/img/sub/prod010/detail04.png" },
-          { "image": "/img/sub/prod010/detail05.png" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/detail02.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/detail03.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/detail04.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/detail05.png"
+          }
         ],
         "info_name": "통밀 오트 베이글",
         "keep": "냉동보관",
@@ -536,14 +700,30 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod010/media01.jpg" },
-      { "media": "/img/sub/prod010/media02.jpg" },
-      { "media": "/img/sub/prod010/media03.jpg" },
-      { "media": "/img/sub/prod010/media04.jpg" },
-      { "media": "/img/sub/prod010/media05.jpg" },
-      { "media": "/img/sub/prod010/media06.jpg" },
-      { "media": "/img/sub/prod010/media07.jpg" },
-      { "media": "/img/sub/prod010/media08.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/media02.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/media03.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/media04.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/media05.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/media06.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/media07.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod010/media08.jpg"
+      }
     ],
     "review": [
       {
@@ -590,7 +770,7 @@
   },
   {
     "id": 11,
-    "image": "/img/main/1pm/05.jpg",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/1pm/05.jpg",
     "sticker": "40%",
     "name": "[다노] 두부비엔나소시지",
     "composition": "4/10/20/30개",
@@ -598,8 +778,8 @@
     "sale_price": "7,200원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod011/big01.jpg",
-        "product_imgS": "/img/sub/prod011/small01.jpg",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/big01.jpg",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/small01.jpg",
         "header": "[다노] 두부비엔나소시지",
         "summary_info": "나트륨을 64% 낮춰 짜지 않고 뽀득한",
         "price": "12,000원",
@@ -633,14 +813,30 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod011/detail01.jpg" },
-          { "image": "/img/sub/prod011/detail02.jpg" },
-          { "image": "/img/sub/prod011/detail03.jpg" },
-          { "image": "/img/sub/prod011/detail04.jpg" },
-          { "image": "/img/sub/prod011/detail05.mp4" },
-          { "image": "/img/sub/prod011/detail06.jpg" },
-          { "image": "/img/sub/prod011/detail07.jpg" },
-          { "image": "/img/sub/prod011/detail08.jpg" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/detail01.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/detail02.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/detail03.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/detail04.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/detail05.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/detail06.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/detail07.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/detail08.jpg"
+          }
         ],
         "info_name": "두부 비엔나 소시지",
         "keep": "냉동보관",
@@ -648,14 +844,30 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod011/media01.jpg" },
-      { "media": "/img/sub/prod011/media02.jpg" },
-      { "media": "/img/sub/prod011/media03.jpg" },
-      { "media": "/img/sub/prod011/media04.jpg" },
-      { "media": "/img/sub/prod011/media05.jpg" },
-      { "media": "/img/sub/prod011/media06.jpg" },
-      { "media": "/img/sub/prod011/media07.jpg" },
-      { "media": "/img/sub/prod011/media08.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/media02.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/media03.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/media04.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/media05.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/media06.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/media07.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod011/media08.jpg"
+      }
     ],
     "review": [
       {

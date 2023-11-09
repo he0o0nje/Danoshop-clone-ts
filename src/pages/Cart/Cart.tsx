@@ -130,7 +130,7 @@ function Cart() {
         <div className="section_path">
           <ol>
             <li>
-              <a href="/">홈</a>
+              <Link to="/">홈</Link>
             </li>
             <li>
               <strong>장바구니</strong>
@@ -150,7 +150,10 @@ function Cart() {
         <style.CartContainer>
           {items.length === 0 ? (
             <style.NoneCart>
-              <img src="/img/icon/none_cart.svg" alt="" />
+              <img
+                src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/none_cart.svg"
+                alt=""
+              />
               <p>장바구니가 비어 있습니다.</p>
             </style.NoneCart>
           ) : (
@@ -382,13 +385,13 @@ function Cart() {
                             <tbody>
                               <tr>
                                 <td>
-                                  <a
-                                    href="#none"
+                                  <Link
+                                    to="#"
                                     className="npay_btn_pay"
                                     style={{ width: "14rem" }}
                                   >
                                     -
-                                  </a>
+                                  </Link>
                                 </td>
                               </tr>
                             </tbody>
@@ -397,16 +400,16 @@ function Cart() {
                         <div className="npay_event">
                           <p>
                             <strong>현장결제</strong>
-                            <a href="#none">
+                            <Link to="#">
                               결제할 때 마다, 월 50번 포인트 뽑기!
-                            </a>
+                            </Link>
                           </p>
-                          <a href="#none" className="npay_more prev">
+                          <Link to="#" className="npay_more prev">
                             -
-                          </a>
-                          <a href="#none" className="npay_more next">
+                          </Link>
+                          <Link to="#" className="npay_more next">
                             -
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>

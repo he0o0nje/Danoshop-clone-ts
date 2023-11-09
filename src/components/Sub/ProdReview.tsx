@@ -9,7 +9,7 @@ import pm9 from "../../data/product/9pm.json";
 import pm11 from "../../data/product/11pm.json";
 import TryEat from "../../data/product/TryEat.json";
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function ProdReview() {
   const { id } = useParams<{ id: string | undefined }>();
@@ -55,14 +55,17 @@ function ProdReview() {
               <span className="review_count"> (2,020) </span>
             </div>
             <div className="all_review">
-              <a href="#none">전체 상품 리뷰 보기</a>
+              <Link to="#">전체 상품 리뷰 보기</Link>
             </div>
           </div>
           <style.ReviewSummary>
             <div className="left_content">
               <div className="score">
                 <div className="icon">
-                  <img src="/img/icon/ico_star.svg" alt="" />
+                  <img
+                    src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                    alt=""
+                  />
                 </div>
                 <span className="text">5.0</span>
               </div>
@@ -134,7 +137,7 @@ function ProdReview() {
                   <span className="review_count">(1,542)</span>
                 </div>
                 <div className="more_btn">
-                  <a href="#none">
+                  <Link to="#">
                     전체보기
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +151,7 @@ function ProdReview() {
                         d="M.667 2.333L4 5.667l3.333-3.334"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="summary_content">
@@ -174,7 +177,7 @@ function ProdReview() {
               <li className="search">
                 <div className="input_container">
                   <input type="text" placeholder="리뷰 키워드 검색" />
-                  <a href="#none">
+                  <Link to="#">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18"
@@ -196,12 +199,12 @@ function ProdReview() {
                         d="M11.78 11.47L16.28 15.97"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </li>
               {product && product.media_review && (
                 <li className="media_first">
-                  <a href="#none">
+                  <Link to="#">
                     <div className="toggle_btn">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -246,7 +249,7 @@ function ProdReview() {
                       </svg>
                       <span>포토/동영상 먼저 보기</span>
                     </div>
-                  </a>
+                  </Link>
                 </li>
               )}
             </ul>
@@ -296,19 +299,34 @@ function ProdReview() {
                         <div className="score_container">
                           <div className="score_star">
                             <div>
-                              <img src="/img/icon/ico_star.svg" alt="" />
+                              <img
+                                src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                                alt=""
+                              />
                             </div>
                             <div>
-                              <img src="/img/icon/ico_star.svg" alt="" />
+                              <img
+                                src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                                alt=""
+                              />
                             </div>
                             <div>
-                              <img src="/img/icon/ico_star.svg" alt="" />
+                              <img
+                                src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                                alt=""
+                              />
                             </div>
                             <div>
-                              <img src="/img/icon/ico_star.svg" alt="" />
+                              <img
+                                src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                                alt=""
+                              />
                             </div>
                             <div>
-                              <img src="/img/icon/ico_star.svg" alt="" />
+                              <img
+                                src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                                alt=""
+                              />
                             </div>
                           </div>
                           <div className="score_text">아주 좋아요</div>
@@ -322,7 +340,7 @@ function ProdReview() {
                       </div>
                       <div className="like_section">
                         <div className="comment_info">
-                          <a href="#none">
+                          <Link to="#">
                             <span className="text">댓글</span>
                             <span className="count">0</span>
                             <svg
@@ -337,7 +355,7 @@ function ProdReview() {
                                 d="M.667 2.333L4 5.667l3.333-3.334"
                               ></path>
                             </svg>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -357,21 +375,21 @@ function ProdReview() {
           </style.ReviewList>
           <style.ReviewPagination>
             <div className="pagination">
-              <a href="#none" className="disabled">
+              <Link to="#" className="disabled">
                 {"<"}
-              </a>
-              <a href="#none" className="active">
+              </Link>
+              <Link to="#" className="active">
                 1
-              </a>
-              <a href="#none">2</a>
-              <a href="#none">3</a>
-              <a href="#none">4</a>
-              <a href="#none">5</a>
-              <a href="#none">6</a>
-              <a href="#none">7</a>
-              <a href="#none">8</a>
-              <a href="#none">9</a>
-              <a href="#none">{">"}</a>
+              </Link>
+              <Link to="#">2</Link>
+              <Link to="#">3</Link>
+              <Link to="#">4</Link>
+              <Link to="#">5</Link>
+              <Link to="#">6</Link>
+              <Link to="#">7</Link>
+              <Link to="#">8</Link>
+              <Link to="#">9</Link>
+              <Link to="#">{">"}</Link>
             </div>
           </style.ReviewPagination>
         </style.ReviewWrap>

@@ -38,32 +38,32 @@ function Header({ isAboutHeader }: HeaderProps): JSX.Element {
           <style.HeaderTop>
             <ul className="top_list">
               <li>
-                <style.Link href="/Login">회원가입</style.Link>
+                <Link to="/Login">회원가입</Link>
               </li>
               <li>
-                <style.Link href="/login">로그인</style.Link>
+                <Link to="/login">로그인</Link>
               </li>
               <li>
-                <style.Link href="/">주문조회</style.Link>
+                <Link to="#">주문조회</Link>
               </li>
               <li>
-                <style.Link href="/">최근본상품</style.Link>
+                <Link to="#">최근본상품</Link>
               </li>
               <li>
                 <style.boardList>
-                  <style.Link href="/">
+                  <Link to="#">
                     고객센터
                     <i className="arrRgt"></i>
-                  </style.Link>
+                  </Link>
                   <ul className="board_list">
                     <li>
-                      <style.Link href="/">공지사항</style.Link>
+                      <Link to="#">공지사항</Link>
                     </li>
                     <li>
-                      <style.Link href="/">상품 사용후기</style.Link>
+                      <Link to="#">상품 사용후기</Link>
                     </li>
                     <li>
-                      <style.Link href="/">상품 Q&A</style.Link>
+                      <Link to="#">상품 Q&A</Link>
                     </li>
                   </ul>
                 </style.boardList>
@@ -73,18 +73,30 @@ function Header({ isAboutHeader }: HeaderProps): JSX.Element {
           <style.HeaderBottom>
             <style.LogoWrap>
               <Link to="/">
-                <img src="/img/header/logo.jpg" alt="" />
+                <img
+                  src="https://he0o0nje.github.io/Danoshop-clone-ts/img/header/logo.jpg"
+                  alt=""
+                />
               </Link>
             </style.LogoWrap>
             <style.MypageWrap>
               <Link to="/Login">
-                <img src="/img/header/mypage1.svg" alt="" />
+                <img
+                  src="https://he0o0nje.github.io/Danoshop-clone-ts/img/header/mypage1.svg"
+                  alt=""
+                />
               </Link>
               <Link to="/cart">
-                <img src="/img/header/mypage2.svg" alt="" />
+                <img
+                  src="https://he0o0nje.github.io/Danoshop-clone-ts/img/header/mypage2.svg"
+                  alt=""
+                />
               </Link>
-              <Link to="/">
-                <img src="/img/header/mypage3.svg" alt="" />
+              <Link to="#">
+                <img
+                  src="https://he0o0nje.github.io/Danoshop-clone-ts/img/header/mypage3.svg"
+                  alt=""
+                />
               </Link>
             </style.MypageWrap>
             <style.BotCategory>

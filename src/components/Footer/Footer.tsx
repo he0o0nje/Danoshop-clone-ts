@@ -8,26 +8,29 @@ function Main() {
       <style.Footer>
         <style.FooterInner>
           <style.LogoWrap>
-            <Link to="/">
-              <img src="/img/header/logo.jpg" alt="" />
+            <Link to="#">
+              <img
+                src="https://he0o0nje.github.io/Danoshop-clone-ts/img/header/logo.jpg"
+                alt=""
+              />
             </Link>
           </style.LogoWrap>
           <style.BtnUtil>
             <ul>
               <li>
-                <a href="/">회사소개</a>
+                <Link to="#">회사소개</Link>
               </li>
               <li>
-                <a href="/">이용약관</a>
+                <Link to="#">이용약관</Link>
               </li>
               <li>
-                <a href="/">개인정보처리방침</a>
+                <Link to="#">개인정보처리방침</Link>
               </li>
               <li>
-                <a href="/">이용안내</a>
+                <Link to="#">이용안내</Link>
               </li>
               <li>
-                <a href="/"> </a>
+                <Link to="#"> </Link>
               </li>
             </ul>
           </style.BtnUtil>
@@ -95,7 +98,7 @@ function Main() {
                 <span className="field">통신판매업 신고번호</span>
                 <span className="value">
                   제2017-서울마포-0722
-                  <a href="/"> [사업자정보확인]</a>
+                  <Link to="#"> [사업자정보확인]</Link>
                 </span>
               </style.BInfoCont>
               <style.BInfoCont>
@@ -107,18 +110,30 @@ function Main() {
           <style.Sns>
             <style.SnsTit>SNS</style.SnsTit>
             <style.SnsBox>
-              <a href="/">
-                <img src="/img/footer/sns1.png" alt="" />
-              </a>
-              <a href="/">
-                <img src="/img/footer/sns2.png" alt="" />
-              </a>
-              <a href="/">
-                <img src="/img/footer/sns3.png" alt="" />
-              </a>
-              <a href="/">
-                <img src="/img/footer/sns4.png" alt="" />
-              </a>
+              <Link to="#">
+                <img
+                  src="https://he0o0nje.github.io/Danoshop-clone-ts/img/footer/sns1.png"
+                  alt=""
+                />
+              </Link>
+              <Link to="#">
+                <img
+                  src="https://he0o0nje.github.io/Danoshop-clone-ts/img/footer/sns2.png"
+                  alt=""
+                />
+              </Link>
+              <Link to="#">
+                <img
+                  src="https://he0o0nje.github.io/Danoshop-clone-ts/img/footer/sns3.png"
+                  alt=""
+                />
+              </Link>
+              <Link to="#">
+                <img
+                  src="https://he0o0nje.github.io/Danoshop-clone-ts/img/footer/sns4.png"
+                  alt=""
+                />
+              </Link>
             </style.SnsBox>
           </style.Sns>
           <style.Copyright>

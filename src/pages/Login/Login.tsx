@@ -3,6 +3,7 @@ import * as style from "./LoginStyle";
 import TopBanner from "../../components/TopBanner/TopBanner";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 function Login() {
   window.scroll({ top: 0, behavior: "auto" });
@@ -15,7 +16,7 @@ function Login() {
         <div className="section_path">
           <ol>
             <li>
-              <a href="/">홈</a>
+              <Link to="/">홈</Link>
             </li>
             <li>
               <strong>로그인</strong>
@@ -44,10 +45,10 @@ function Login() {
         </div>
         <div className="wrap_find">
           <div>
-            <a href="/">아이디 찾기</a>
+            <Link to="#">아이디 찾기</Link>
           </div>
           <div>
-            <a href="/">비밀번호 찾기</a>
+            <Link to="#">비밀번호 찾기</Link>
           </div>
         </div>
         <div className="login__util">

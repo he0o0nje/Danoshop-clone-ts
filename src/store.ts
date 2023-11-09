@@ -43,7 +43,8 @@ let cart = createSlice({
     items: [
       {
         id: "12",
-        image: "/img/main/3pm/01.png",
+        image:
+          "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/3pm/01.png",
         name: "[다노] 프로틴 snack eat 옥수수맛_저칼로리 식단관리 간식",
         price: "2,600원",
         sale_price: "2,080원",
@@ -52,7 +53,8 @@ let cart = createSlice({
       },
       {
         id: "16",
-        image: "/img/main/6pm/01.webp",
+        image:
+          "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/6pm/01.webp",
         name: "[다노] 단백질 도시락 7종 세트_식단관리 고단백 냉동도시락",
         price: "31,500원",
         sale_price: "",
@@ -61,7 +63,8 @@ let cart = createSlice({
       },
       {
         id: "9",
-        image: "/img/main/1pm/03.png",
+        image:
+          "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/1pm/03.png",
         name: "[다노] 닭가슴살 큐브_식단관리 닭가슴살",
         price: "10,000원",
         sale_price: "",

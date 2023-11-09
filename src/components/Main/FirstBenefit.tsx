@@ -2,6 +2,7 @@ import React from "react";
 import * as title from "./ProdTitStyle";
 import * as style from "./FirstBenefitStyle";
 import dummy from "../../data/main/1stBenefit.json";
+import { Link } from "react-router-dom";
 
 function FirstBenefit() {
   return (
@@ -15,7 +16,7 @@ function FirstBenefit() {
           <ul>
             {dummy.map((item, index) => (
               <li key={index}>
-                <a href="/">
+                <Link to="/">
                   <div className="img_area">
                     <img src={item.image} alt="" />
                   </div>
@@ -23,7 +24,7 @@ function FirstBenefit() {
                     <p>{item.title}</p>
                     <p>자세히 보기{">"}</p>
                   </div>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

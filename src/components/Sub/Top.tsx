@@ -234,10 +234,10 @@ function Top() {
       <style.HeadCategory>
         <ol>
           <li>
-            <Link to="">홈</Link>
+            <Link to="/">홈</Link>
           </li>
           <li>
-            <Link to="">다노절 이벤트</Link>
+            <Link to="#">다노절 이벤트</Link>
           </li>
         </ol>
       </style.HeadCategory>
@@ -245,7 +245,7 @@ function Top() {
         <style.DetailArea>
           <style.ImgArea>
             <div className="prod_img">
-              <Link to="">
+              <Link to="#">
                 <img src={product?.top[0].product_imgB} alt="" />
               </Link>
             </div>
@@ -407,7 +407,10 @@ function Top() {
                           className="delete"
                           onClick={() => handleProductDelete(selectedOption)}
                         >
-                          <img src="/img/icon/ico_product_delete.svg" alt="" />
+                          <img
+                            src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_product_delete.svg"
+                            alt=""
+                          />
                         </button>
                       </td>
                       <td>
@@ -484,14 +487,14 @@ function Top() {
                         <tbody>
                           <tr>
                             <td>
-                              <a href="#none" className="npay_btn_pay">
+                              <Link to="#" className="npay_btn_pay">
                                 -
-                              </a>
+                              </Link>
                             </td>
                             <td>
-                              <a href="#none" className="npay_btn_zzim">
+                              <Link to="#" className="npay_btn_zzim">
                                 -
-                              </a>
+                              </Link>
                             </td>
                           </tr>
                         </tbody>
@@ -500,14 +503,14 @@ function Top() {
                     <div className="npay_event">
                       <p>
                         <strong>현장결제</strong>
-                        <a href="#none">결제할 때 마다, 월 50번 포인트 뽑기!</a>
+                        <Link to="#">결제할 때 마다, 월 50번 포인트 뽑기!</Link>
                       </p>
-                      <a href="#none" className="npay_more prev">
+                      <Link to="#" className="npay_more prev">
                         -
-                      </a>
-                      <a href="#none" className="npay_more next">
+                      </Link>
+                      <Link to="#" className="npay_more next">
                         -
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

@@ -1,7 +1,7 @@
 [
   {
     "id": 16,
-    "image": "/img/main/6pm/01.webp",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/6pm/01.webp",
     "sticker": "",
     "name": "[다노] 단백질 도시락 7종 세트_식단관리 고단백 냉동도시락",
     "composition": "1/2세트",
@@ -9,8 +9,8 @@
     "sale_price": "",
     "top": [
       {
-        "product_imgB": "/img/sub/prod016/big01.webp",
-        "product_imgS": "/img/sub/prod016/small01.png",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/big01.webp",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/small01.png",
         "header": "[다노] 단백질 도시락 7종 세트_식단관리 고단백 냉동도시락",
         "summary_info": "식단관리 입문자에게도 부담없는 도시락",
         "price": "31,500원",
@@ -34,38 +34,102 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod016/detail01.png" },
-          { "image": "/img/sub/prod016/detail02.png" },
-          { "image": "/img/sub/prod016/detail03.png" },
-          { "image": "/img/sub/prod016/detail04.png" },
-          { "image": "/img/sub/prod016/detail05.png" },
-          { "image": "/img/sub/prod016/detail06.jpg" },
-          { "image": "/img/sub/prod016/detail07.png" },
-          { "image": "/img/sub/prod016/detail08.jpg" },
-          { "image": "/img/sub/prod016/detail09.png" },
-          { "image": "/img/sub/prod016/detail10.jpg" },
-          { "image": "/img/sub/prod016/detail11.jpg" },
-          { "image": "/img/sub/prod016/detail12.jpg" },
-          { "image": "/img/sub/prod016/detail13.jpg" },
-          { "image": "/img/sub/prod016/detail14.jpg" },
-          { "image": "/img/sub/prod016/detail15.png" },
-          { "image": "/img/sub/prod016/detail16.mp4" },
-          { "image": "/img/sub/prod016/detail17.mp4" },
-          { "image": "/img/sub/prod016/detail18.mp4" },
-          { "image": "/img/sub/prod016/detail19.png" },
-          { "image": "/img/sub/prod016/detail20.jpg" },
-          { "image": "/img/sub/prod016/detail21.jpg" },
-          { "image": "/img/sub/prod016/detail22.png" },
-          { "image": "/img/sub/prod016/detail23.png" },
-          { "image": "/img/sub/prod016/detail24.png" },
-          { "image": "/img/sub/prod016/detail25.png" },
-          { "image": "/img/sub/prod016/detail26.png" },
-          { "image": "/img/sub/prod016/detail27.png" },
-          { "image": "/img/sub/prod016/detail28.png" },
-          { "image": "/img/sub/prod016/detail29.png" },
-          { "image": "/img/sub/prod016/detail30.png" },
-          { "image": "/img/sub/prod016/detail31.png" },
-          { "image": "/img/sub/prod016/detail32.png" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail02.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail03.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail04.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail05.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail06.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail07.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail08.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail09.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail10.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail11.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail12.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail13.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail14.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail15.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail16.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail17.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail18.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail19.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail20.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail21.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail22.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail23.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail24.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail25.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail26.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail27.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail28.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail29.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail30.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail31.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/detail32.png"
+          }
         ],
         "info_name": "단백질 도시락",
         "keep": "냉동보관",
@@ -73,14 +137,30 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod016/media01.jpg" },
-      { "media": "/img/sub/prod016/media02.jpg" },
-      { "media": "/img/sub/prod016/media03.jpg" },
-      { "media": "/img/sub/prod016/media04.jpg" },
-      { "media": "/img/sub/prod016/media05.jpg" },
-      { "media": "/img/sub/prod016/media06.jpg" },
-      { "media": "/img/sub/prod016/media07.jpg" },
-      { "media": "/img/sub/prod016/media08.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/media02.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/media03.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/media04.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/media05.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/media06.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/media07.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod016/media08.jpg"
+      }
     ],
     "review": [
       {
@@ -127,7 +207,7 @@
   },
   {
     "id": 17,
-    "image": "/img/main/6pm/02.jpg",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/6pm/02.jpg",
     "sticker": "",
     "name": "[다노] 컬리플라워 도시락 6종 세트_식단관리 냉동도시락",
     "composition": "1/2세트",
@@ -135,8 +215,8 @@
     "sale_price": "",
     "top": [
       {
-        "product_imgB": "/img/sub/prod017/big01.jpg",
-        "product_imgS": "/img/sub/prod017/small01.jpg",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/big01.jpg",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/small01.jpg",
         "header": "[다노] 컬리플라워 도시락 6종 세트_식단관리 냉동도시락",
         "summary_info": "과식한 다음날 가볍게 채우는",
         "price": "29,000원",
@@ -160,15 +240,33 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod017/detail01.png" },
-          { "image": "/img/sub/prod017/detail02.png" },
-          { "image": "/img/sub/prod017/detail03.mp4" },
-          { "image": "/img/sub/prod017/detail04.png" },
-          { "image": "/img/sub/prod017/detail05.jpg" },
-          { "image": "/img/sub/prod017/detail06.jpg" },
-          { "image": "/img/sub/prod017/detail07.jpg" },
-          { "image": "/img/sub/prod017/detail08.jpg" },
-          { "image": "/img/sub/prod017/detail09.png" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/detail02.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/detail03.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/detail04.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/detail05.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/detail06.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/detail07.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/detail08.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/detail09.png"
+          }
         ],
         "info_name": "컬리플라워 도시락",
         "keep": "냉동보관",
@@ -176,14 +274,30 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod017/media01.jpg" },
-      { "media": "/img/sub/prod017/media02.jpg" },
-      { "media": "/img/sub/prod017/media03.jpg" },
-      { "media": "/img/sub/prod017/media04.jpg" },
-      { "media": "/img/sub/prod017/media05.jpg" },
-      { "media": "/img/sub/prod017/media06.jpg" },
-      { "media": "/img/sub/prod017/media07.jpg" },
-      { "media": "/img/sub/prod017/media08.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/media02.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/media03.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/media04.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/media05.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/media06.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/media07.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod017/media08.jpg"
+      }
     ],
     "review": [
       {
@@ -230,7 +344,7 @@
   },
   {
     "id": 18,
-    "image": "/img/main/6pm/03.webp",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/6pm/03.webp",
     "sticker": "",
     "name": "[다노] 닭가슴살도시락 7종 세트_식단관리 고단백 냉동도시락",
     "composition": "1/2세트",
@@ -238,8 +352,8 @@
     "sale_price": "",
     "top": [
       {
-        "product_imgB": "/img/sub/prod018/big01.webp",
-        "product_imgS": "/img/sub/prod018/small01.png",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/big01.webp",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/small01.png",
         "header": "[다노] 닭가슴살도시락 7종 세트_식단관리 고단백 냉동도시락",
         "summary_info": "7가지 닭가슴살 요리로 맛있게 즐기는 도시락",
         "price": "31,500원",
@@ -263,26 +377,66 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod018/detail01.png" },
-          { "image": "/img/sub/prod018/detail02.mp4" },
-          { "image": "/img/sub/prod018/detail03.png" },
-          { "image": "/img/sub/prod018/detail04.png" },
-          { "image": "/img/sub/prod018/detail05.png" },
-          { "image": "/img/sub/prod018/detail06.jpg" },
-          { "image": "/img/sub/prod018/detail07.jpg" },
-          { "image": "/img/sub/prod018/detail08.jpg" },
-          { "image": "/img/sub/prod018/detail09.png" },
-          { "image": "/img/sub/prod018/detail10.png" },
-          { "image": "/img/sub/prod018/detail11.png" },
-          { "image": "/img/sub/prod018/detail12.png" },
-          { "image": "/img/sub/prod018/detail13.png" },
-          { "image": "/img/sub/prod018/detail14.png" },
-          { "image": "/img/sub/prod018/detail15.png" },
-          { "image": "/img/sub/prod018/detail16.png" },
-          { "image": "/img/sub/prod018/detail17.png" },
-          { "image": "/img/sub/prod018/detail18.png" },
-          { "image": "/img/sub/prod018/detail19.png" },
-          { "image": "/img/sub/prod018/detail20.png" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail02.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail03.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail04.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail05.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail06.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail07.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail08.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail09.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail10.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail11.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail12.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail13.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail14.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail15.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail16.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail17.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail18.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail19.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/detail20.png"
+          }
         ],
         "info_name": "닭가슴살 도시락",
         "keep": "냉동보관",
@@ -290,14 +444,30 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod018/media01.jpg" },
-      { "media": "/img/sub/prod018/media02.jpg" },
-      { "media": "/img/sub/prod018/media03.jpg" },
-      { "media": "/img/sub/prod018/media04.jpg" },
-      { "media": "/img/sub/prod018/media05.jpg" },
-      { "media": "/img/sub/prod018/media06.jpg" },
-      { "media": "/img/sub/prod018/media07.jpg" },
-      { "media": "/img/sub/prod018/media08.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/media02.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/media03.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/media04.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/media05.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/media06.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/media07.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod018/media08.jpg"
+      }
     ],
     "review": [
       {
@@ -344,7 +514,7 @@
   },
   {
     "id": 19,
-    "image": "/img/main/6pm/04.png",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/6pm/04.png",
     "sticker": "",
     "name": "[다노] 저당 곤약 도시락 7종 세트_식단관리 저당 냉동도시락",
     "composition": "1/2세트",
@@ -352,8 +522,8 @@
     "sale_price": "",
     "top": [
       {
-        "product_imgB": "/img/sub/prod019/big01.png",
-        "product_imgS": "/img/sub/prod019/small01.png",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/big01.png",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/small01.png",
         "header": "[다노] 저당 곤약 도시락 7종 세트_식단관리 저당 냉동도시락",
         "summary_info": "탄수화물을 낮춘 도시락",
         "price": "33,000원",
@@ -377,28 +547,72 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod019/detail01.png" },
-          { "image": "/img/sub/prod019/detail02.png" },
-          { "image": "/img/sub/prod019/detail03.png" },
-          { "image": "/img/sub/prod019/detail04.png" },
-          { "image": "/img/sub/prod019/detail05.png" },
-          { "image": "/img/sub/prod019/detail06.png" },
-          { "image": "/img/sub/prod019/detail07.png" },
-          { "image": "/img/sub/prod019/detail08.png" },
-          { "image": "/img/sub/prod019/detail09.png" },
-          { "image": "/img/sub/prod019/detail10.png" },
-          { "image": "/img/sub/prod019/detail11.png" },
-          { "image": "/img/sub/prod019/detail12.png" },
-          { "image": "/img/sub/prod019/detail13.png" },
-          { "image": "/img/sub/prod019/detail14.png" },
-          { "image": "/img/sub/prod019/detail15.png" },
-          { "image": "/img/sub/prod019/detail16.png" },
-          { "image": "/img/sub/prod019/detail17.png" },
-          { "image": "/img/sub/prod019/detail18.jpg" },
-          { "image": "/img/sub/prod019/detail19.jpg" },
-          { "image": "/img/sub/prod019/detail20.png" },
-          { "image": "/img/sub/prod019/detail21.png" },
-          { "image": "/img/sub/prod019/detail22.png" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail02.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail03.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail04.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail05.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail06.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail07.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail08.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail09.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail10.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail11.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail12.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail13.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail14.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail15.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail16.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail17.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail18.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail19.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail20.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail21.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/detail22.png"
+          }
         ],
         "info_name": "저당 곤약 도시락",
         "keep": "냉동보관",
@@ -406,14 +620,30 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod019/media01.jpg" },
-      { "media": "/img/sub/prod019/media02.jpg" },
-      { "media": "/img/sub/prod019/media03.jpg" },
-      { "media": "/img/sub/prod019/media04.jpg" },
-      { "media": "/img/sub/prod019/media05.jpg" },
-      { "media": "/img/sub/prod019/media06.jpg" },
-      { "media": "/img/sub/prod019/media07.jpg" },
-      { "media": "/img/sub/prod019/media08.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/media02.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/media03.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/media04.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/media05.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/media06.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/media07.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod019/media08.jpg"
+      }
     ],
     "review": [
       {

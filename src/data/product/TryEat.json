@@ -1,7 +1,7 @@
 [
   {
     "id": 29,
-    "image": "/img/main/TryEat/01.png",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/TryEat/01.png",
     "sticker": "20%",
     "name": "다노 간편식 세트",
     "composition": "맛보기 세트 (각 2개씩)",
@@ -9,8 +9,8 @@
     "sale_price": "29,120원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod029/big01.png",
-        "product_imgS": "/img/sub/prod029/small01.png",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/big01.png",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/small01.png",
         "header": "다노 간편식 세트",
         "summary_info": "다노 간편식 세트",
         "price": "36,400원",
@@ -29,37 +29,99 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod029/detail01.png" },
-          { "image": "/img/sub/prod029/detail02.png" },
-          { "image": "/img/sub/prod029/detail03.png" },
-          { "image": "/img/sub/prod029/detail04.jpg" },
-          { "image": "/img/sub/prod029/detail05.png" },
-          { "image": "/img/sub/prod029/detail06.png" },
-          { "image": "/img/sub/prod029/detail07.png" },
-          { "image": "/img/sub/prod029/detail08.png" },
-          { "image": "/img/sub/prod029/detail09.png" },
-          { "image": "/img/sub/prod029/detail10.png" },
-          { "image": "/img/sub/prod029/detail11.png" },
-          { "image": "/img/sub/prod029/detail12.png" },
-          { "image": "/img/sub/prod029/detail13.png" },
-          { "image": "/img/sub/prod029/detail14.png" },
-          { "image": "/img/sub/prod029/detail15.png" },
-          { "image": "/img/sub/prod029/detail16.png" },
-          { "image": "/img/sub/prod029/detail17.png" },
-          { "image": "/img/sub/prod029/detail18.png" },
-          { "image": "/img/sub/prod029/detail19.png" },
-          { "image": "/img/sub/prod029/detail20.png" },
-          { "image": "/img/sub/prod029/detail21.png" },
-          { "image": "/img/sub/prod029/detail22.png" },
-          { "image": "/img/sub/prod029/detail23.png" },
-          { "image": "/img/sub/prod029/detail24.png" },
-          { "image": "/img/sub/prod029/detail25.png" },
-          { "image": "/img/sub/prod029/detail26.png" },
-          { "image": "/img/sub/prod029/detail27.png" },
-          { "image": "/img/sub/prod029/detail28.png" },
-          { "image": "/img/sub/prod029/detail29.jpg" },
-          { "image": "/img/sub/prod029/detail30.jpg" },
-          { "image": "/img/sub/prod029/detail31.jpg" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail02.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail03.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail04.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail05.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail06.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail07.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail08.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail09.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail10.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail11.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail12.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail13.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail14.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail15.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail16.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail17.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail18.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail19.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail20.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail21.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail22.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail23.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail24.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail25.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail26.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail27.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail28.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail29.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail30.jpg"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod029/detail31.jpg"
+          }
         ],
         "info_name": "",
         "keep": "",
@@ -80,7 +142,7 @@
   },
   {
     "id": 30,
-    "image": "/img/main/TryEat/02.png",
+    "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/main/TryEat/02.png",
     "sticker": "20%",
     "name": "다노 분식 세트",
     "composition": "분식 맛보기 세트",
@@ -88,8 +150,8 @@
     "sale_price": "24,000원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod030/big01.png",
-        "product_imgS": "/img/sub/prod030/small01.png",
+        "product_imgB": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/big01.png",
+        "product_imgS": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/small01.png",
         "header": "다노 분식 세트",
         "summary_info": "떡볶이부터 면까지 다양하게 즐기는 분식세트",
         "price": "30,000원",
@@ -108,49 +170,135 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod030/detail01.png" },
-          { "image": "/img/sub/prod030/detail02.png" },
-          { "image": "/img/sub/prod030/detail03.png" },
-          { "image": "/img/sub/prod030/detail04.png" },
-          { "image": "/img/sub/prod030/detail05.png" },
-          { "image": "/img/sub/prod030/detail06.png" },
-          { "image": "/img/sub/prod030/detail07.png" },
-          { "image": "/img/sub/prod030/detail08.png" },
-          { "image": "/img/sub/prod030/detail09.png" },
-          { "image": "/img/sub/prod030/detail10.png" },
-          { "image": "/img/sub/prod030/detail11.png" },
-          { "image": "/img/sub/prod030/detail12.png" },
-          { "image": "/img/sub/prod030/detail13.png" },
-          { "image": "/img/sub/prod030/detail14.mp4" },
-          { "image": "/img/sub/prod030/detail15.png" },
-          { "image": "/img/sub/prod030/detail16.mp4" },
-          { "image": "/img/sub/prod030/detail17.png" },
-          { "image": "/img/sub/prod030/detail18.mp4" },
-          { "image": "/img/sub/prod030/detail19.png" },
-          { "image": "/img/sub/prod030/detail20.png" },
-          { "image": "/img/sub/prod030/detail21.png" },
-          { "image": "/img/sub/prod030/detail22.gif" },
-          { "image": "/img/sub/prod030/detail23.png" },
-          { "image": "/img/sub/prod030/detail24.gif" },
-          { "image": "/img/sub/prod030/detail25.png" },
-          { "image": "/img/sub/prod030/detail26.gif" },
-          { "image": "/img/sub/prod030/detail27.png" },
-          { "image": "/img/sub/prod030/detail28.gif" },
-          { "image": "/img/sub/prod030/detail29.png" },
-          { "image": "/img/sub/prod030/detail30.gif" },
-          { "image": "/img/sub/prod030/detail31.png" },
-          { "image": "/img/sub/prod030/detail32.gif" },
-          { "image": "/img/sub/prod030/detail33.png" },
-          { "image": "/img/sub/prod030/detail34.png" },
-          { "image": "/img/sub/prod030/detail35.png" },
-          { "image": "/img/sub/prod030/detail36.png" },
-          { "image": "/img/sub/prod030/detail37.png" },
-          { "image": "/img/sub/prod030/detail38.png" },
-          { "image": "/img/sub/prod030/detail39.gif" },
-          { "image": "/img/sub/prod030/detail40.png" },
-          { "image": "/img/sub/prod030/detail41.gif" },
-          { "image": "/img/sub/prod030/detail42.png" },
-          { "image": "/img/sub/prod030/detail43.png" }
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail01.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail02.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail03.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail04.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail05.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail06.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail07.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail08.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail09.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail10.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail11.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail12.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail13.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail14.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail15.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail16.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail17.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail18.mp4"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail19.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail20.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail21.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail22.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail23.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail24.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail25.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail26.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail27.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail28.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail29.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail30.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail31.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail32.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail33.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail34.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail35.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail36.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail37.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail38.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail39.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail40.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail41.gif"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail42.png"
+          },
+          {
+            "image": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/detail43.png"
+          }
         ],
         "info_name": "",
         "keep": "",
@@ -158,8 +306,12 @@
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod030/media01.jpg" },
-      { "media": "/img/sub/prod030/media02.jpg" }
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/media01.jpg"
+      },
+      {
+        "media": "https://he0o0nje.github.io/Danoshop-clone-ts/img/sub/prod030/media02.jpg"
+      }
     ],
     "review": [
       {

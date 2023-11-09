@@ -1,5 +1,6 @@
 import * as style from "./TopBannerStyle";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function TopBanner() {
   const [isHidden, setIsHidden] = useState(false);
@@ -25,7 +26,7 @@ function TopBanner() {
         <style.TopBanner>
           <style.TopBanInner>
             <style.TopBanTxt>
-              <a href="!">다노샵 회원가입 시 최대 10만원 쿠폰팩 증정</a>
+              <Link to="/">다노샵 회원가입 시 최대 10만원 쿠폰팩 증정</Link>
             </style.TopBanTxt>
             <style.TopBanClose>
               <input type="checkbox" id="checkbox" />
