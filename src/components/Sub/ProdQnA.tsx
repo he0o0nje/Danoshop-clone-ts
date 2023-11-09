@@ -64,7 +64,7 @@ function ProdQnA() {
                   <td>기타문의</td>
                   <td className="left subject">
                     <img
-                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_lock.gif"
+                      src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_lock.gif"
                       alt=""
                     />
                     &nbsp;&nbsp;&nbsp;
@@ -82,12 +82,12 @@ function ProdQnA() {
                   <td className="left subject">
                     &nbsp;&nbsp;&nbsp;
                     <img
-                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_re.gif"
+                      src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_re.gif"
                       alt=""
                     />
                     &nbsp;&nbsp;&nbsp;
                     <img
-                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_lock.gif"
+                      src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_lock.gif"
                       alt=""
                     />
                     &nbsp;&nbsp;&nbsp;
@@ -104,7 +104,7 @@ function ProdQnA() {
                   <td>상품 문의</td>
                   <td className="left subject">
                     <img
-                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_lock.gif"
+                      src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_lock.gif"
                       alt=""
                     />
                     &nbsp;&nbsp;&nbsp;
@@ -122,12 +122,12 @@ function ProdQnA() {
                   <td className="left subject">
                     &nbsp;&nbsp;&nbsp;
                     <img
-                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_re.gif"
+                      src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_re.gif"
                       alt=""
                     />
                     &nbsp;&nbsp;&nbsp;
                     <img
-                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_lock.gif"
+                      src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_lock.gif"
                       alt=""
                     />
                     &nbsp;&nbsp;&nbsp;
@@ -144,7 +144,7 @@ function ProdQnA() {
                   <td>기타문의</td>
                   <td className="left subject">
                     <img
-                      src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_lock.gif"
+                      src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_lock.gif"
                       alt=""
                     />
                     &nbsp;&nbsp;&nbsp;

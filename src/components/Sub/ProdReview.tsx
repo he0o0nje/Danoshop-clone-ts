@@ -63,7 +63,7 @@ function ProdReview() {
               <div className="score">
                 <div className="icon">
                   <img
-                    src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                    src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_star.svg"
                     alt=""
                   />
                 </div>
@@ -300,31 +300,31 @@ function ProdReview() {
                           <div className="score_star">
                             <div>
                               <img
-                                src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                                src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_star.svg"
                                 alt=""
                               />
                             </div>
                             <div>
                               <img
-                                src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                                src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_star.svg"
                                 alt=""
                               />
                             </div>
                             <div>
                               <img
-                                src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                                src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_star.svg"
                                 alt=""
                               />
                             </div>
                             <div>
                               <img
-                                src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                                src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_star.svg"
                                 alt=""
                               />
                             </div>
                             <div>
                               <img
-                                src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_star.svg"
+                                src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_star.svg"
                                 alt=""
                               />
                             </div>

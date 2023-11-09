@@ -408,7 +408,7 @@ function Top() {
                           onClick={() => handleProductDelete(selectedOption)}
                         >
                           <img
-                            src="http://localhost:3000/Danoshop-clone-ts/img/icon/ico_product_delete.svg"
+                            src="https://he0o0nje.github.io/Danoshop-clone-ts/img/icon/ico_product_delete.svg"
                             alt=""
                           />
                         </button>

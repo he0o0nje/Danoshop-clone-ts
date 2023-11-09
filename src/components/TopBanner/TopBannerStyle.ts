@@ -41,7 +41,7 @@ export const TopBanClose = styled.div`
   input {
     width: 1.5rem;
     height: 1.5rem;
-    background: url("http://localhost:3000/Danoshop-clone-ts/img/header/checkbox_off.svg")
+    background: url("https://he0o0nje.github.io/Danoshop-clone-ts/img/header/checkbox_off.svg")
       no-repeat center;
     background-size: 1.5rem;
     border: 0.1rem solid #d9d9d9;
@@ -49,7 +49,7 @@ export const TopBanClose = styled.div`
     appearance: none;
   }
   input[type="checkbox"]:checked {
-    background: url("http://localhost:3000/Danoshop-clone-ts/img/header/checkbox_on.svg")
+    background: url("https://he0o0nje.github.io/Danoshop-clone-ts/img/header/checkbox_on.svg")
       no-repeat center;
     background-size: 1.5rem;
     transition: none;
