@@ -1,5 +1,5 @@
 import * as style from "./TopBannerStyle";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 function TopBanner() {
   const [isHidden, setIsHidden] = useState(false);

@@ -5,7 +5,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
 function Login() {
-  window.scroll({ top: 0, behavior: "instant" });
+  window.scroll({ top: 0, behavior: "auto" });
 
   return (
     <>

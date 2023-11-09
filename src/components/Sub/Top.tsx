@@ -123,7 +123,6 @@ function Top() {
     const selectedOption = product?.top[0].select.find(
       (option: any) => option.option === optionName
     );
-
     if (selectedOption) {
       const priceWithoutCommas = selectedOption.price.replace(/,/g, "");
       return parseInt(priceWithoutCommas);

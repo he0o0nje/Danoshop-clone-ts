@@ -8,7 +8,7 @@ import pm6 from "../../data/product/6pm.json";
 import pm9 from "../../data/product/9pm.json";
 import pm11 from "../../data/product/11pm.json";
 import TryEat from "../../data/product/TryEat.json";
-import React, { useState, useRef } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 
 function ProdReview() {

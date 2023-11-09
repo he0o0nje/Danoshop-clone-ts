@@ -15,9 +15,9 @@ import pm6 from "../../data/product/6pm.json";
 import pm9 from "../../data/product/9pm.json";
 import pm11 from "../../data/product/11pm.json";
 import TryEat from "../../data/product/TryEat.json";
-import { useScroll } from "../../components/Sub/ScrollContext";
+// import { useScroll } from "../../components/Sub/ScrollContext";
 import { useParams } from "react-router-dom";
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 
 function AboutPage() {
   const { id } = useParams<{ id: string | undefined }>();
@@ -49,7 +49,7 @@ function AboutPage() {
     return <style.Alert404>제품을 찾을 수 없습니다.</style.Alert404>;
   }
 
-  window.scroll({ top: 0, behavior: "instant" });
+  window.scroll({ top: 0, behavior: "auto" });
 
   return (
     <>

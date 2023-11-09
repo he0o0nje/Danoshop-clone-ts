@@ -1,6 +1,6 @@
 import React from "react";
 import * as style from "./DetailTabStyle";
-import { useScroll } from "./ScrollContext";
+// import { useScroll } from "./ScrollContext";
 import { Link } from "react-router-dom";
 
 interface DetailTabProps {

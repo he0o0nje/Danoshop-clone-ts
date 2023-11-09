@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 
 function Cart() {
   React.useEffect(() => {
-    window.scroll({ top: 0, behavior: "instant" });
+    window.scroll({ top: 0, behavior: "auto" });
   }, []);
 
   const dispatch = useDispatch();
