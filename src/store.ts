@@ -159,10 +159,6 @@ const calculatePrice = createSlice({
         return quantity * price;
       });
       state.calculateItemPrice = calculatedItemPrice;
-      // .reduce(
-      //   (total, itemPrice) => total + itemPrice,
-      //   0
-      // );
     },
     totalDiscount(state, action: PayloadAction<{ items: ProductItem[] }>) {
       const { items } = action.payload;
