@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Danoshop-clone-ts/static/css/main.eefc237f.css",
-    "main.js": "/Danoshop-clone-ts/static/js/main.9cf46421.js",
+    "main.js": "/Danoshop-clone-ts/static/js/main.5bcef5f5.js",
     "index.html": "/Danoshop-clone-ts/index.html",
     "main.eefc237f.css.map": "/Danoshop-clone-ts/static/css/main.eefc237f.css.map",
-    "main.9cf46421.js.map": "/Danoshop-clone-ts/static/js/main.9cf46421.js.map"
+    "main.5bcef5f5.js.map": "/Danoshop-clone-ts/static/js/main.5bcef5f5.js.map"
   },
   "entrypoints": [
     "static/css/main.eefc237f.css",
-    "static/js/main.9cf46421.js"
+    "static/js/main.5bcef5f5.js"
   ]
 }
